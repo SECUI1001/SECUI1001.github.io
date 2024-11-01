@@ -19,22 +19,22 @@
   <meta name="author" content="sincui">
   <meta name="keywords" content="">
   
-    <meta name="description" content="sql语句1、SQL，指结构化查询语言，全称是 Structured Query Language。用于访问和处理数据库的标准的计算机语言。 2、SQL 对大小写不敏感：SELECT 与 select 是相同的。 3、重要的sql命令： SELECT - 从数据库中提取数据 UPDATE - 更新数据库中的数据 DELETE - 从数据库中删除数据 INSERT INTO - 向数据库中插入新数据">
+    <meta name="description" content="SQL约束（1）NOT NULL - 指示某列不能存储 NULL 值。 （2）UNIQUE - 保证某列的每行必须有唯一的值。 （3）PRIMARY KEY - NOT NULL 和 UNIQUE 的结合。确保某列（或两个列多个列的结合）有唯一标识，有助于更容易更快速地找到表中的一个特定的记录。 （4）FOREIGN KEY - 保证一个表中的数据匹配另一个表中的值的参照完整性。 （5）CHECK">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数据库基础知识">
+<meta property="og:title" content="sql语句">
 <meta property="og:url" content="http://example.com/2024/11/01/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/index.html">
 <meta property="og:site_name" content="sin">
-<meta property="og:description" content="sql语句1、SQL，指结构化查询语言，全称是 Structured Query Language。用于访问和处理数据库的标准的计算机语言。 2、SQL 对大小写不敏感：SELECT 与 select 是相同的。 3、重要的sql命令： SELECT - 从数据库中提取数据 UPDATE - 更新数据库中的数据 DELETE - 从数据库中删除数据 INSERT INTO - 向数据库中插入新数据">
+<meta property="og:description" content="SQL约束（1）NOT NULL - 指示某列不能存储 NULL 值。 （2）UNIQUE - 保证某列的每行必须有唯一的值。 （3）PRIMARY KEY - NOT NULL 和 UNIQUE 的结合。确保某列（或两个列多个列的结合）有唯一标识，有助于更容易更快速地找到表中的一个特定的记录。 （4）FOREIGN KEY - 保证一个表中的数据匹配另一个表中的值的参照完整性。 （5）CHECK">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-11-01T01:32:25.000Z">
-<meta property="article:modified_time" content="2024-11-01T01:33:28.414Z">
+<meta property="article:published_time" content="2024-11-01T03:10:36.000Z">
+<meta property="article:modified_time" content="2024-11-01T03:16:49.763Z">
 <meta property="article:author" content="sincui">
-<meta property="article:tag" content="数据库 基础知识">
+<meta property="article:tag" content="基础知识 sql语句">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>数据库基础知识 - sin</title>
+  <title>sql语句 - sin</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -213,7 +213,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="数据库基础知识"></span>
+            <span id="subtitle" data-typed-text="sql语句"></span>
           
         </div>
 
@@ -224,7 +224,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-11-01 09:32" pubdate>
+        <time datetime="2024-11-01 11:10" pubdate>
           2024年11月1日 上午
         </time>
       </span>
@@ -236,7 +236,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.8k 字
+          3.5k 字
         
       </span>
     
@@ -247,7 +247,7 @@
         
         
         
-          24 分钟
+          30 分钟
         
       </span>
     
@@ -293,7 +293,7 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">数据库基础知识</h1>
+            <h1 id="seo-header">sql语句</h1>
             
               <p id="updated-time" class="note note-info" style="">
                 
@@ -306,7 +306,13 @@
             
               <div class="markdown-body">
                 
-                <h1 id="sql语句"><a href="#sql语句" class="headerlink" title="sql语句"></a>sql语句</h1><p>1、SQL，指结构化查询语言，全称是 Structured Query Language。用于访问和处理数据库的标准的计算机语言。</p>
+                <h1 id="SQL约束"><a href="#SQL约束" class="headerlink" title="SQL约束"></a>SQL约束</h1><p>（1）NOT NULL - 指示某列不能存储 NULL 值。</p>
+<p>（2）UNIQUE - 保证某列的每行必须有唯一的值。</p>
+<p>（3）PRIMARY KEY - NOT NULL 和 UNIQUE 的结合。确保某列（或两个列多个列的结合）有唯一标识，有助于更容易更快速地找到表中的一个特定的记录。</p>
+<p>（4）FOREIGN KEY - 保证一个表中的数据匹配另一个表中的值的参照完整性。</p>
+<p>（5）CHECK - 保证列中的值符合指定的条件。</p>
+<p>（6）DEFAULT - 规定没有给列赋值时的默认值。</p>
+<h1 id="SQL语句"><a href="#SQL语句" class="headerlink" title="SQL语句"></a>SQL语句</h1><p>1、SQL，指结构化查询语言，全称是 Structured Query Language。用于访问和处理数据库的标准的计算机语言。</p>
 <p>2、SQL 对大小写不敏感：SELECT 与 select 是相同的。</p>
 <p>3、重要的sql命令：</p>
 <p>SELECT - 从数据库中提取数据</p>
@@ -320,40 +326,26 @@
 <p>DROP TABLE - 删除表</p>
 <p>CREATE INDEX - 创建索引（搜索键）</p>
 <p>DROP INDEX - 删除索引</p>
-<h3 id="二、sql命令"><a href="#二、sql命令" class="headerlink" title="二、sql命令"></a>二、sql命令</h3><p>1、创建数据库</p>
-<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">DATABASE</span> &lt;数据库名&gt;;<br>eg:  <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">DATABASE</span> mytest;<br></code></pre></td></tr></table></figure>
+<h1 id="SQL命令"><a href="#SQL命令" class="headerlink" title="SQL命令"></a>SQL命令</h1><h5 id="1、创建数据库"><a href="#1、创建数据库" class="headerlink" title="1、创建数据库"></a>1、创建数据库</h5><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">DATABASE</span> &lt;数据库名&gt;;<br>eg:  <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">DATABASE</span> mytest;<br></code></pre></td></tr></table></figure>
 
-<p>2、查看所有数据库</p>
-<figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf">show databases<span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure>
+<h5 id="2、查看所有数据库"><a href="#2、查看所有数据库" class="headerlink" title="2、查看所有数据库"></a>2、查看所有数据库</h5><figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf">show databases<span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure>
 
-<p>3、删除数据库</p>
-<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">drop</span> <span class="hljs-keyword">database</span> &lt;数据库名&gt;;<br>eg:  <span class="hljs-keyword">drop</span> <span class="hljs-keyword">database</span> mytest;<br></code></pre></td></tr></table></figure>
+<h5 id="3、删除数据库"><a href="#3、删除数据库" class="headerlink" title="3、删除数据库"></a>3、删除数据库</h5><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">drop</span> <span class="hljs-keyword">database</span> &lt;数据库名&gt;;<br>eg:  <span class="hljs-keyword">drop</span> <span class="hljs-keyword">database</span> mytest;<br></code></pre></td></tr></table></figure>
 
-<p>4、选择数据库</p>
-<figure class="highlight openscad"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs openscad"><span class="hljs-meta"><span class="hljs-keyword">use</span> &lt;数据库名&gt;</span>；<br>eg:   <span class="hljs-keyword">use</span> mytest；<br></code></pre></td></tr></table></figure>
+<h5 id="4、选择数据库"><a href="#4、选择数据库" class="headerlink" title="4、选择数据库"></a>4、选择数据库</h5><figure class="highlight openscad"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs openscad"><span class="hljs-meta"><span class="hljs-keyword">use</span> &lt;数据库名&gt;</span>；<br>eg:   <span class="hljs-keyword">use</span> mytest；<br></code></pre></td></tr></table></figure>
 
-<p>5、设置使用的字符集</p>
-<figure class="highlight gams"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gams"><span class="hljs-keyword">set</span> names <span class="hljs-comment">utf8</span><br></code></pre></td></tr></table></figure>
+<h5 id="5、设置使用的字符集"><a href="#5、设置使用的字符集" class="headerlink" title="5、设置使用的字符集"></a>5、设置使用的字符集</h5><figure class="highlight gams"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gams"><span class="hljs-keyword">set</span> names <span class="hljs-comment">utf8</span><br></code></pre></td></tr></table></figure>
 
-<p>6、创建数据表</p>
-<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-built_in">table_name</span> (<span class="hljs-built_in">column_name</span> column_type);<br></code></pre></td></tr></table></figure>
+<h5 id="6、创建数据表"><a href="#6、创建数据表" class="headerlink" title="6、创建数据表"></a>6、创建数据表</h5><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-built_in">table_name</span> (<span class="hljs-built_in">column_name</span> column_type);<br></code></pre></td></tr></table></figure>
 
-<p>7  INSERT INTO 语句</p>
-<p>INSERT INTO 语句可以有两种编写形式。</p>
+<h5 id="7-INSERT-INTO-语句"><a href="#7-INSERT-INTO-语句" class="headerlink" title="7  INSERT INTO 语句"></a>7  INSERT INTO 语句</h5><p>INSERT INTO 语句可以有两种编写形式。</p>
 <p>第一种形式无需指定要插入数据的列名，只需提供被插入的值即可：</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> table_name<br><span class="hljs-keyword">VALUES</span> (value1,value2,value3,...);<br></code></pre></td></tr></table></figure>
 
 <p>第二种形式需要指定列名及被插入的值：</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> table_name (column1,column2,column3,...)<br><span class="hljs-keyword">VALUES</span> (value1,value2,value3,...);<br></code></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> table_name (column1,column2,column3,...)<br><span class="hljs-keyword">VALUES</span> (value1,value2,value3,...);<br><br>table_name<span class="hljs-operator">*</span><span class="hljs-operator">*</span>：需要插入新记录的表名。<br><br>column1, column2, ...<span class="hljs-operator">*</span><span class="hljs-operator">*</span>：需要插入的字段名。<br><br>value1, value2, ...<span class="hljs-operator">*</span><span class="hljs-operator">*</span>：需要插入的字段值。<br></code></pre></td></tr></table></figure>
 
-<ul>
-<li><p><strong>table_name</strong>：需要插入新记录的表名。</p>
-</li>
-<li><p>**column1, column2, …**：需要插入的字段名。</p>
-</li>
-<li><p>**value1, value2, …**：需要插入的字段值。</p>
-</li>
-<li><p>eg：</p>
+<p>eg：</p>
 <table>
 <thead>
 <tr>
@@ -462,22 +454,14 @@
 <td></td>
 </tr>
 </tbody></table>
-<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> Websites (<span class="hljs-type">name</span>, url, alexa, country) <span class="hljs-keyword">VALUES</span> (<span class="hljs-string">&#x27;百度&#x27;</span>,<span class="hljs-string">&#x27;https://www.baidu.com/&#x27;</span>,<span class="hljs-string">&#x27;4&#x27;</span>,<span class="hljs-string">&#x27;CN&#x27;</span>);<br></code></pre></td></tr></table></figure></li>
-</ul>
-<h4 id="sql约束："><a href="#sql约束：" class="headerlink" title="sql约束："></a>sql约束：</h4><p>（1）NOT NULL - 指示某列不能存储 NULL 值。</p>
-<p>（2）UNIQUE - 保证某列的每行必须有唯一的值。</p>
-<p>（3）PRIMARY KEY - NOT NULL 和 UNIQUE 的结合。确保某列（或两个列多个列的结合）有唯一标识，有助于更容易更快速地找到表中的一个特定的记录。</p>
-<p>（4）FOREIGN KEY - 保证一个表中的数据匹配另一个表中的值的参照完整性。</p>
-<p>（5）CHECK - 保证列中的值符合指定的条件。</p>
-<p>（6）DEFAULT - 规定没有给列赋值时的默认值。</p>
-<p>7、查看当前数据库中的所有表</p>
-<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">show</span> <span class="hljs-keyword">tables</span>;<br></code></pre></td></tr></table></figure>
+<p>实例：</p>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> Websites (<span class="hljs-type">name</span>, url, alexa, country) <span class="hljs-keyword">VALUES</span> (<span class="hljs-string">&#x27;百度&#x27;</span>,<span class="hljs-string">&#x27;https://www.baidu.com/&#x27;</span>,<span class="hljs-string">&#x27;4&#x27;</span>,<span class="hljs-string">&#x27;CN&#x27;</span>);<br></code></pre></td></tr></table></figure>
 
-<p>8、查看表结构</p>
-<figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf">DESC &lt;表名&gt;<span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure>
+<h5 id="8、查看当前数据库中的所有表"><a href="#8、查看当前数据库中的所有表" class="headerlink" title="8、查看当前数据库中的所有表"></a>8、查看当前数据库中的所有表</h5><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">show</span> <span class="hljs-keyword">tables</span>;<br></code></pre></td></tr></table></figure>
 
-<p>9、查询数据</p>
-<p>（1）基本查询</p>
+<h5 id="9、查看表结构"><a href="#9、查看表结构" class="headerlink" title="9、查看表结构"></a>9、查看表结构</h5><figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf">DESC &lt;表名&gt;<span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure>
+
+<h5 id="10、查询数据"><a href="#10、查询数据" class="headerlink" title="10、查询数据"></a>10、查询数据</h5><p>（1）基本查询</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">SELECT</span> * <span class="hljs-selector-tag">FROM</span> &lt;表名&gt;；<br></code></pre></td></tr></table></figure>
 
 <p>（2）投影查询:指在 SQL 查询中只选择特定的列（字段）</p>
@@ -637,7 +621,7 @@
 <td>David</td>
 </tr>
 </tbody></table>
-<p>（7）聚合查询</p>
+<p>（7）聚合查询 使用聚合函数对一组数据进行汇总计算的查询</p>
 <p>1、COUNT()统计一张表的数据量</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">COUNT</span>(<span class="hljs-operator">*</span>)  <span class="hljs-keyword">FROM</span> <span class="hljs-operator">&lt;</span>表名<span class="hljs-operator">&gt;</span> <span class="hljs-keyword">WHERE</span> <span class="hljs-operator">&lt;</span>条件表达式<span class="hljs-operator">&gt;</span>；<br><span class="hljs-built_in">COUNT</span>(<span class="hljs-operator">*</span>) 是一个聚合函数，用于计算结果集中的总行数。<span class="hljs-operator">*</span> 表示计算所有行，不管列的内容。<br></code></pre></td></tr></table></figure>
 
@@ -857,7 +841,8 @@
 <p>如果你只想找出价格大于 150 的产品的最高价格，可以使用：</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">MAX</span>(price) <br><span class="hljs-keyword">FROM</span> Products <br><span class="hljs-keyword">WHERE</span> price <span class="hljs-operator">&gt;</span> <span class="hljs-number">150</span>;<br></code></pre></td></tr></table></figure>
 
-<h3 id="查询结果"><a href="#查询结果" class="headerlink" title="查询结果"></a>查询结果</h3><p>对于第一个查询，结果将是：</p>
+<p><strong>查询结果</strong></p>
+<p>对于第一个查询，结果将是：</p>
 <table>
 <thead>
 <tr>
@@ -1012,19 +997,240 @@
 <td>400</td>
 </tr>
 </tbody></table>
-<p>（8）多表查询（笛卡尔查询）</p>
+<h5 id="（8）多表查询（笛卡尔查询）-使用-JOIN（外连接（左，右），内连接）"><a href="#（8）多表查询（笛卡尔查询）-使用-JOIN（外连接（左，右），内连接）" class="headerlink" title="（8）多表查询（笛卡尔查询） 使用 JOIN（外连接（左，右），内连接）"></a>（8）多表查询（笛卡尔查询） 使用 JOIN（外连接（左，右），内连接）</h5><p>左连接与右连接的左右指的是以两张表中的哪一张为基准，它们都是外连接。</p>
 <figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">SELECT</span> * FROM &lt;表<span class="hljs-number">1</span>&gt; &lt;表<span class="hljs-number">2</span>&gt;；<br></code></pre></td></tr></table></figure>
 
-<ol>
-<li><strong>使用 JOIN</strong>：</li>
-</ol>
 <p>如果表1和表2之间有关系，比如通过某个键（如 <code>id</code>），你可以使用 <code>JOIN</code> 来查询它们的组合：</p>
-<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">sql</span><br><span class="hljs-attribute">SELECT</span> *<br><span class="hljs-attribute">FROM</span> 表<span class="hljs-number">1</span><br><span class="hljs-attribute">JOIN</span> 表<span class="hljs-number">2</span> <span class="hljs-literal">ON</span> 表<span class="hljs-number">1</span>.id = 表<span class="hljs-number">2</span>.foreign_id;<br></code></pre></td></tr></table></figure>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">SELECT</span> *<br><span class="hljs-attribute">FROM</span> 表<span class="hljs-number">1</span><br><span class="hljs-attribute">JOIN</span> 表<span class="hljs-number">2</span> <span class="hljs-literal">ON</span> 表<span class="hljs-number">1</span>.id = 表<span class="hljs-number">2</span>.foreign_id;<br></code></pre></td></tr></table></figure>
 
 <p>这里，<code>表1.id</code> 是表1中的主键，<code>表2.foreign_id</code> 是表2中对应的外键。</p>
+<p>eg:</p>
+<p>假设我们有两个表：</p>
+<p>用户表 (<code>users</code>):</p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Alice</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Bob</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Carol</td>
+</tr>
+</tbody></table>
+<p>订单表 (<code>orders</code>):</p>
+<table>
+<thead>
+<tr>
+<th>order_id</th>
+<th>user_id</th>
+<th>product</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>101</td>
+<td>1</td>
+<td>Laptop</td>
+</tr>
+<tr>
+<td>102</td>
+<td>1</td>
+<td>Mouse</td>
+</tr>
+<tr>
+<td>103</td>
+<td>2</td>
+<td>Keyboard</td>
+</tr>
+<tr>
+<td>104</td>
+<td>3</td>
+<td>Monitor</td>
+</tr>
+<tr>
+<td>105</td>
+<td>4</td>
+<td>Printer</td>
+</tr>
+</tbody></table>
+<p>我们希望查询每个用户的订单信息，可以使用以下 SQL 查询：</p>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">sql</span><br><span class="hljs-keyword">SELECT</span> *<br><span class="hljs-keyword">FROM</span> users<br><span class="hljs-keyword">JOIN</span> orders <span class="hljs-keyword">ON</span> users.id = orders.user_id;<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li><strong><code>SELECT \*</code></strong>: 我们选择所有列，包括 <code>users</code> 表和 <code>orders</code> 表的所有字段。</li>
+<li><strong><code>FROM users</code></strong>: 从 <code>users</code> 表开始查询。</li>
+<li><strong><code>JOIN orders ON users.id = orders.user_id</code></strong>: 将 <code>users</code> 表和 <code>orders</code> 表联接，条件是 <code>users</code> 表的 <code>id</code> 与 <code>orders</code> 表的 <code>user_id</code> 匹配。</li>
+</ul>
+<p>执行这个查询后，我们会得到以下结果：</p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>name</th>
+<th>order_id</th>
+<th>user_id</th>
+<th>product</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Alice</td>
+<td>101</td>
+<td>1</td>
+<td>Laptop</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Alice</td>
+<td>102</td>
+<td>1</td>
+<td>Mouse</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Bob</td>
+<td>103</td>
+<td>2</td>
+<td>Keyboard</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Carol</td>
+<td>104</td>
+<td>3</td>
+<td>Monitor</td>
+</tr>
+</tbody></table>
+<p><strong>SQL INNER JOIN</strong> </p>
+<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">SELECT</span> column_name(s) <br><span class="hljs-keyword">FROM</span> table1 <br><span class="hljs-keyword">INNER</span> <span class="hljs-keyword">JOIN</span> table2 <br><span class="hljs-keyword">ON</span> table1.column_name=table2.column_name;<br>或者<br><span class="hljs-keyword">SELECT</span> column_name(s)<br><span class="hljs-keyword">FROM</span> table1<br><span class="hljs-keyword">JOIN</span> table2<br><span class="hljs-keyword">ON</span> table1.column_name=table2.column_name;<br><br>参数说明：<br><span class="hljs-keyword">SELECT</span> column_name(s):<br>   这部分指定你希望从查询中选择的列。可以是一个或多个列名，例如table1.column1, table2.column2。如果你想选择所有列，可以用 * 替代列名，比如 <span class="hljs-keyword">SELECT</span> *。<br><span class="hljs-keyword">FROM</span> table1:<br>   指定主查询的数据源，这里是 table1。该表是查询的基础。<br><span class="hljs-keyword">INNER</span> <span class="hljs-keyword">JOIN</span> table2:<br>    这里使用了 <span class="hljs-keyword">INNER</span> <span class="hljs-keyword">JOIN</span>，表示只返回在两个表中都有的匹配记录。换句话说，只有那些在 table1 和 table2 中都存在的行才会出现在结果中。<br><span class="hljs-keyword">ON</span> table1.column_name = table2.column_name:<br>    这部分定义了连接条件，即两个表之间的关系。table1.column_name 和 table2.column_name 是用于匹配的列名。只有当这两个列的值相等时，相关的记录才会被返回。<br><br></code></pre></td></tr></table></figure>
+
+<p>eg：</p>
+<p>两个表中，<strong>主键</strong>和<strong>外键</strong>的定义如下：</p>
 <ol>
-<li><strong>使用 UNION</strong>：</li>
+<li><ul>
+<li><pre><code class="hljs">employees表：
+ 主键
+     id 唯一标识每一行员工记录，确保没有重复。
+ 外键
+     department_id
+     - 指向 **`departments` 表** 的 `id` 列，表示员工所属的部门。
+
+2. departments表：
+   - 主键
+     id 唯一标识每一个部门记录。
+   - 外键：
+   无 - 该表不包含指向其他表的外键
+<figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs gherkin"><br>假设有两个表：employees 表：<br><br>|<span class="hljs-string"> id   </span>|<span class="hljs-string"> name  </span>|<span class="hljs-string"> department_id </span>|<br>|<span class="hljs-string"> ---- </span>|<span class="hljs-string"> ----- </span>|<span class="hljs-string"> ------------- </span>|<br>|<span class="hljs-string"> 1    </span>|<span class="hljs-string"> Alice </span>|<span class="hljs-string"> 1             </span>|<br>|<span class="hljs-string"> 2    </span>|<span class="hljs-string"> Bob   </span>|<span class="hljs-string"> 2             </span>|<br>|<span class="hljs-string"> 3    </span>|<span class="hljs-string"> Carol </span>|<span class="hljs-string"> 1             </span>|<br><br>departments 表：<br><br>|<span class="hljs-string"> id   </span>|<span class="hljs-string"> department_name </span>|<br>|<span class="hljs-string"> ---- </span>|<span class="hljs-string"> --------------- </span>|<br>|<span class="hljs-string"> 1    </span>|<span class="hljs-string"> Sales           </span>|<br>|<span class="hljs-string"> 2    </span>|<span class="hljs-string"> HR              </span>|<br>|<span class="hljs-string"> 3    </span>|<span class="hljs-string"> IT              </span>|<br><br>执行以下查询：<br><br>```sql<br>SELECT employees.name, departments.department_name<br>FROM employees<br>INNER JOIN departments<br>ON employees.department_id = departments.id;<br></code></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ul>
+</li>
 </ol>
+<p>查询结果将返回所有在 <code>employees</code> 表和 <code>departments</code> 表中都有匹配记录的员工姓名和对应的部门名称：</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>department_name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Alice</td>
+<td>Sales</td>
+</tr>
+<tr>
+<td>Bob</td>
+<td>HR</td>
+</tr>
+<tr>
+<td>Carol</td>
+<td>Sales</td>
+</tr>
+</tbody></table>
+<p> <strong>LEFT JOIN</strong></p>
+<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">SELECT</span> column_name(s)<br><span class="hljs-keyword">FROM</span> table1<br><span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> table2<br><span class="hljs-keyword">ON</span> table1.column_name = table2.column_name;<br>语句解析：<br><span class="hljs-keyword">SELECT</span> column_name(s):<br>   这里指定要查询的列。可以是 table1 和 table2 中的任意列，使用逗号分隔列名。<br><span class="hljs-keyword">FROM</span> table1:<br>   指定查询的主表是 table1。<br><br><span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> table2:<br>   使用 <span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> 连接 table1 和 table2。这意味着：<br>        查询将返回 table1 中的所有记录。<br>        对于 table1 中每一条记录，如果在 table2 中找到了匹配的记录，则也返回对应的记录；如果没有找到匹配的记录，则 table2 的相关列会返回 <span class="hljs-literal">NULL</span>。<br><br><span class="hljs-keyword">ON</span> table1.column_name = table2.column_name:<br>      指定连接条件，表示如何将两个表关联起来。这里 table1.column_name 是 table1 中的列，table2.column_name 是 table2 中的列。只有当这两列的值相等时，记录才会被视为匹配。<br><br></code></pre></td></tr></table></figure>
+
+<p>eg：</p>
+<p>employees 表：</p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>name</th>
+<th>department_id</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Alice</td>
+<td>10</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Bob</td>
+<td>20</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Charlie</td>
+<td>NULL</td>
+</tr>
+</tbody></table>
+<p>departments 表：</p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>department_name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>10</td>
+<td>HR</td>
+</tr>
+<tr>
+<td>20</td>
+<td>IT</td>
+</tr>
+<tr>
+<td>30</td>
+<td>Marketing</td>
+</tr>
+</tbody></table>
+<p>语句：</p>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">sql</span><br><span class="hljs-keyword">SELECT</span> employees.name, departments.department_name<br><span class="hljs-keyword">FROM</span> employees<br><span class="hljs-keyword">LEFT JOIN</span> departments<br><span class="hljs-keyword">ON</span> employees.department_id = departments.id;<br></code></pre></td></tr></table></figure>
+
+<p>结果：</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>department_name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Alice</td>
+<td>HR</td>
+</tr>
+<tr>
+<td>Bob</td>
+<td>IT</td>
+</tr>
+<tr>
+<td>Charlie</td>
+<td>NULL</td>
+</tr>
+</tbody></table>
+<p><strong>使用 UNION：</strong></p>
 <p>如果你想从两个表中获取相同结构的记录，可以使用 <code>UNION</code>：</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">sql</span><br><span class="hljs-keyword">SELECT</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">FROM</span> 表<span class="hljs-number">1</span><br><span class="hljs-keyword">UNION</span><br><span class="hljs-keyword">SELECT</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">FROM</span> 表<span class="hljs-number">2</span>;<br></code></pre></td></tr></table></figure>
 
@@ -1113,8 +1319,7 @@
 <td>用不同的格式显示日期&#x2F;时间</td>
 </tr>
 </tbody></table>
-<p>10、修改数据</p>
-<p>（1）插入数据</p>
+<h5 id="11、修改数据"><a href="#11、修改数据" class="headerlink" title="11、修改数据"></a>11、修改数据</h5><p>（1）插入数据</p>
 <figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">INSERT</span> INTO &lt;表名&gt; (字段<span class="hljs-number">1</span>, 字段<span class="hljs-number">2</span>, ...) VALUES (值<span class="hljs-number">1</span>, 值<span class="hljs-number">2</span>, ...);<br></code></pre></td></tr></table></figure>
 
 <p>（2）更新数据</p>
@@ -1139,8 +1344,6 @@
 <figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> table2<br>(<span class="hljs-built_in">column_name</span>(s))<br><span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">column_name</span>(s)<br><span class="hljs-keyword">FROM</span> table1;<br></code></pre></td></tr></table></figure>
 
 
-
-
                 
               </div>
             
@@ -1152,7 +1355,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="print-no-link">#数据库 基础知识</a>
+        <a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-sql%E8%AF%AD%E5%8F%A5/" class="print-no-link">#基础知识 sql语句</a>
       
     </div>
   
@@ -1164,7 +1367,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>数据库基础知识</div>
+      <div>sql语句</div>
       <div>http://example.com/2024/11/01/数据库基础知识/</div>
     </div>
     <div class="license-meta">
