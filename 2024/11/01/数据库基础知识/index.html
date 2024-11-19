@@ -37,8 +37,9 @@
 <meta property="og:image" content="http://example.com/2024/11/01/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/6bcfd796d424e00214693c57a43a42a.png">
 <meta property="og:image" content="http://example.com/2024/11/01/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/f4d4cbe1a983ae063efba91851107c6.png">
 <meta property="og:image" content="http://example.com/2024/11/01/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/5cb91aac5b1970e69559d094c9e009d.png">
+<meta property="og:image" content="http://example.com/2024/11/01/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/1732013665224.jpg">
 <meta property="article:published_time" content="2024-11-01T03:10:36.000Z">
-<meta property="article:modified_time" content="2024-11-19T06:46:28.696Z">
+<meta property="article:modified_time" content="2024-11-19T10:55:11.692Z">
 <meta property="article:author" content="sincui">
 <meta property="article:tag" content="基础知识 sql语句">
 <meta name="twitter:card" content="summary_large_image">
@@ -248,7 +249,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          11k 字
+          13k 字
         
       </span>
     
@@ -259,7 +260,7 @@
         
         
         
-          93 分钟
+          113 分钟
         
       </span>
     
@@ -310,7 +311,7 @@
               <p id="updated-time" class="note note-info" style="">
                 
                   
-                    本文最后更新于 2024年11月19日 下午
+                    本文最后更新于 2024年11月19日 晚上
                   
                 
               </p>
@@ -340,19 +341,19 @@
 <p>（4）FOREIGN KEY - 保证一个表中的数据匹配另一个表中的值的参照完整性。</p>
 <p>（5）CHECK - 保证列中的值符合指定的条件。</p>
 <p>（6）DEFAULT - 规定没有给列赋值时的默认值。</p>
-<h1 id="SQL命令"><a href="#SQL命令" class="headerlink" title="SQL命令"></a>SQL命令</h1><h5 id="1、创建数据库"><a href="#1、创建数据库" class="headerlink" title="1、创建数据库"></a>1、创建数据库</h5><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">DATABASE</span> &lt;数据库名&gt;;<br>eg:  <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">DATABASE</span> mytest;<br></code></pre></td></tr></table></figure>
+<h1 id="SQL命令"><a href="#SQL命令" class="headerlink" title="SQL命令"></a>SQL命令</h1><h3 id="1、创建数据库"><a href="#1、创建数据库" class="headerlink" title="1、创建数据库"></a>1、创建数据库</h3><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">DATABASE</span> &lt;数据库名&gt;;<br>eg:  <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">DATABASE</span> mytest;<br></code></pre></td></tr></table></figure>
 
-<h5 id="2、查看所有数据库"><a href="#2、查看所有数据库" class="headerlink" title="2、查看所有数据库"></a>2、查看所有数据库</h5><figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf">show databases<span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure>
+<h3 id="2、查看所有数据库"><a href="#2、查看所有数据库" class="headerlink" title="2、查看所有数据库"></a>2、查看所有数据库</h3><figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf">show databases<span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure>
 
-<h5 id="3、删除数据库"><a href="#3、删除数据库" class="headerlink" title="3、删除数据库"></a>3、删除数据库</h5><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">drop</span> <span class="hljs-keyword">database</span> &lt;数据库名&gt;;<br>eg:  <span class="hljs-keyword">drop</span> <span class="hljs-keyword">database</span> mytest;<br></code></pre></td></tr></table></figure>
+<h3 id="3、删除数据库"><a href="#3、删除数据库" class="headerlink" title="3、删除数据库"></a>3、删除数据库</h3><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">drop</span> <span class="hljs-keyword">database</span> &lt;数据库名&gt;;<br>eg:  <span class="hljs-keyword">drop</span> <span class="hljs-keyword">database</span> mytest;<br></code></pre></td></tr></table></figure>
 
-<h5 id="4、选择数据库"><a href="#4、选择数据库" class="headerlink" title="4、选择数据库"></a>4、选择数据库</h5><figure class="highlight openscad"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs openscad"><span class="hljs-meta"><span class="hljs-keyword">use</span> &lt;数据库名&gt;</span>；<br>eg:   <span class="hljs-keyword">use</span> mytest；<br></code></pre></td></tr></table></figure>
+<h3 id="4、选择数据库"><a href="#4、选择数据库" class="headerlink" title="4、选择数据库"></a>4、选择数据库</h3><figure class="highlight openscad"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs openscad"><span class="hljs-meta"><span class="hljs-keyword">use</span> &lt;数据库名&gt;</span>；<br>eg:   <span class="hljs-keyword">use</span> mytest；<br></code></pre></td></tr></table></figure>
 
-<h5 id="5、设置使用的字符集"><a href="#5、设置使用的字符集" class="headerlink" title="5、设置使用的字符集"></a>5、设置使用的字符集</h5><figure class="highlight gams"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gams"><span class="hljs-keyword">set</span> names <span class="hljs-comment">utf8</span><br></code></pre></td></tr></table></figure>
+<h3 id="5、设置使用的字符集"><a href="#5、设置使用的字符集" class="headerlink" title="5、设置使用的字符集"></a>5、设置使用的字符集</h3><figure class="highlight gams"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gams"><span class="hljs-keyword">set</span> names <span class="hljs-comment">utf8</span><br></code></pre></td></tr></table></figure>
 
-<h5 id="6、创建数据表"><a href="#6、创建数据表" class="headerlink" title="6、创建数据表"></a>6、创建数据表</h5><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-built_in">table_name</span> (<span class="hljs-built_in">column_name</span> column_type);<br></code></pre></td></tr></table></figure>
+<h3 id="6、创建数据表"><a href="#6、创建数据表" class="headerlink" title="6、创建数据表"></a>6、创建数据表</h3><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-built_in">table_name</span> (<span class="hljs-built_in">column_name</span> column_type);<br></code></pre></td></tr></table></figure>
 
-<h5 id="7-INSERT-INTO-语句"><a href="#7-INSERT-INTO-语句" class="headerlink" title="7  INSERT INTO 语句"></a>7  INSERT INTO 语句</h5><p>INSERT INTO 语句可以有两种编写形式。</p>
+<h3 id="7-INSERT-INTO-语句"><a href="#7-INSERT-INTO-语句" class="headerlink" title="7  INSERT INTO 语句"></a>7  INSERT INTO 语句</h3><p>INSERT INTO 语句可以有两种编写形式。</p>
 <p>第一种形式无需指定要插入数据的列名，只需提供被插入的值即可：</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> table_name<br><span class="hljs-keyword">VALUES</span> (value1,value2,value3,...);<br></code></pre></td></tr></table></figure>
 
@@ -471,24 +472,19 @@
 <p>实例：</p>
 <figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> Websites (<span class="hljs-type">name</span>, url, alexa, country) <span class="hljs-keyword">VALUES</span> (<span class="hljs-string">&#x27;百度&#x27;</span>,<span class="hljs-string">&#x27;https://www.baidu.com/&#x27;</span>,<span class="hljs-string">&#x27;4&#x27;</span>,<span class="hljs-string">&#x27;CN&#x27;</span>);<br></code></pre></td></tr></table></figure>
 
-<h5 id="8、查看当前数据库中的所有表"><a href="#8、查看当前数据库中的所有表" class="headerlink" title="8、查看当前数据库中的所有表"></a>8、查看当前数据库中的所有表</h5><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">show</span> <span class="hljs-keyword">tables</span>;<br></code></pre></td></tr></table></figure>
+<h3 id="8、查看当前数据库中的所有表"><a href="#8、查看当前数据库中的所有表" class="headerlink" title="8、查看当前数据库中的所有表"></a>8、查看当前数据库中的所有表</h3><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">show</span> <span class="hljs-keyword">tables</span>;<br></code></pre></td></tr></table></figure>
 
-<h5 id="9、查看表结构"><a href="#9、查看表结构" class="headerlink" title="9、查看表结构"></a>9、查看表结构</h5><figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf">DESC &lt;表名&gt;<span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure>
+<h3 id="9、查看表结构"><a href="#9、查看表结构" class="headerlink" title="9、查看表结构"></a>9、查看表结构</h3><figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf">DESC &lt;表名&gt;<span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure>
 
-<h5 id="10、查询数据"><a href="#10、查询数据" class="headerlink" title="10、查询数据"></a>10、查询数据</h5><p>（1）基本查询</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">SELECT</span> * <span class="hljs-selector-tag">FROM</span> &lt;表名&gt;；<br></code></pre></td></tr></table></figure>
+<h3 id="10、查询数据"><a href="#10、查询数据" class="headerlink" title="10、查询数据"></a>10、查询数据</h3><h5 id="（1）基本查询"><a href="#（1）基本查询" class="headerlink" title="（1）基本查询"></a>（1）基本查询</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">SELECT</span> * <span class="hljs-selector-tag">FROM</span> &lt;表名&gt;；<br></code></pre></td></tr></table></figure>
 
-<p>（2）投影查询:指在 SQL 查询中只选择特定的列（字段）</p>
-<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">column_name</span>,<span class="hljs-built_in">column_name</span><br><span class="hljs-keyword">FROM</span> <span class="hljs-built_in">table_name</span>;<br></code></pre></td></tr></table></figure>
+<h5 id="（2）投影查询-指在-SQL-查询中只选择特定的列（字段）"><a href="#（2）投影查询-指在-SQL-查询中只选择特定的列（字段）" class="headerlink" title="（2）投影查询:指在 SQL 查询中只选择特定的列（字段）"></a>（2）投影查询:指在 SQL 查询中只选择特定的列（字段）</h5><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">column_name</span>,<span class="hljs-built_in">column_name</span><br><span class="hljs-keyword">FROM</span> <span class="hljs-built_in">table_name</span>;<br></code></pre></td></tr></table></figure>
 
-<p>（3）查询结果返回唯一值</p>
-<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">DISTINCT</span> <span class="hljs-built_in">column_name</span>,<span class="hljs-built_in">column_name</span><br><span class="hljs-keyword">FROM</span> <span class="hljs-built_in">table_name</span>;<br><span class="hljs-keyword">DISTINCT</span> 是修饰符，表示查询结果中只返回不同的值。它会去除重复的记录。<br></code></pre></td></tr></table></figure>
+<h5 id="（3）DISTINCT查询结果返回唯一值"><a href="#（3）DISTINCT查询结果返回唯一值" class="headerlink" title="（3）DISTINCT查询结果返回唯一值"></a>（3）DISTINCT查询结果返回唯一值</h5><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">DISTINCT</span> <span class="hljs-built_in">column_name</span>,<span class="hljs-built_in">column_name</span><br><span class="hljs-keyword">FROM</span> <span class="hljs-built_in">table_name</span>;<br><span class="hljs-keyword">DISTINCT</span> 是修饰符，表示查询结果中只返回不同的值。它会去除重复的记录。<br></code></pre></td></tr></table></figure>
 
-<p>（4）条件查询</p>
-<figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs vbnet"><span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> &lt;表名&gt; <span class="hljs-keyword">WHERE</span> &lt;条件表达式&gt;；<br><br><span class="hljs-symbol">eg:</span><br><span class="hljs-keyword">SELECT</span> * <br><span class="hljs-keyword">FROM</span> Employees <br><span class="hljs-keyword">WHERE</span> age &gt; <span class="hljs-number">30</span>;<br></code></pre></td></tr></table></figure>
+<h5 id="（4）条件查询WHERE"><a href="#（4）条件查询WHERE" class="headerlink" title="（4）条件查询WHERE"></a>（4）条件查询WHERE</h5><figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs vbnet"><span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> &lt;表名&gt; <span class="hljs-keyword">WHERE</span> &lt;条件表达式&gt;；<br><br><span class="hljs-symbol">eg:</span><br><span class="hljs-keyword">SELECT</span> * <br><span class="hljs-keyword">FROM</span> Employees <br><span class="hljs-keyword">WHERE</span> age &gt; <span class="hljs-number">30</span>;<br></code></pre></td></tr></table></figure>
 
-<p>（5）排序</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> column_name,column_name<br><span class="hljs-keyword">FROM</span> table_name<br><span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> column_name,column_name <span class="hljs-keyword">ASC</span><span class="hljs-operator">|</span><span class="hljs-keyword">DESC</span>;<br><br><br><span class="hljs-keyword">ASC</span> 表示升序（默认），即从小到大排列。<br><span class="hljs-keyword">DESC</span> 表示降序，即从大到小排列。<br>可以在每个列后面单独指定排序方式，例如：column_name1 <span class="hljs-keyword">ASC</span>, column_name2 <span class="hljs-keyword">DESC</span>。<br>eg:升序排序<br><span class="hljs-keyword">SELECT</span> product_id, product_name <br><span class="hljs-keyword">FROM</span> Products <br><span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> price <span class="hljs-keyword">ASC</span>;<br></code></pre></td></tr></table></figure>
+<h5 id="（5）排序ASC-DESC"><a href="#（5）排序ASC-DESC" class="headerlink" title="（5）排序ASC|DESC"></a>（5）排序ASC|DESC</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> column_name,column_name<br><span class="hljs-keyword">FROM</span> table_name<br><span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> column_name,column_name <span class="hljs-keyword">ASC</span><span class="hljs-operator">|</span><span class="hljs-keyword">DESC</span>;<br><br><br><span class="hljs-keyword">ASC</span> 表示升序（默认），即从小到大排列。<br><span class="hljs-keyword">DESC</span> 表示降序，即从大到小排列。<br>可以在每个列后面单独指定排序方式，例如：column_name1 <span class="hljs-keyword">ASC</span>, column_name2 <span class="hljs-keyword">DESC</span>。<br>eg:升序排序<br><span class="hljs-keyword">SELECT</span> product_id, product_name <br><span class="hljs-keyword">FROM</span> Products <br><span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> price <span class="hljs-keyword">ASC</span>;<br></code></pre></td></tr></table></figure>
 
 <p>假设有一个名为 <code>Products</code> 的表，结构如下：</p>
 <table>
@@ -550,8 +546,7 @@
 <td>Laptop</td>
 </tr>
 </tbody></table>
-<p>（6）分页查询</p>
-<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">column_name</span>(s)<br><span class="hljs-keyword">FROM</span> <span class="hljs-built_in">table_name</span><br><span class="hljs-keyword">LIMIT</span> number <span class="hljs-keyword">OFFSET</span> 起始值;<br></code></pre></td></tr></table></figure>
+<h5 id="（6）分页查询LIMIT-number-OFFSET"><a href="#（6）分页查询LIMIT-number-OFFSET" class="headerlink" title="（6）分页查询LIMIT number OFFSET"></a>（6）分页查询LIMIT number OFFSET</h5><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">column_name</span>(s)<br><span class="hljs-keyword">FROM</span> <span class="hljs-built_in">table_name</span><br><span class="hljs-keyword">LIMIT</span> number <span class="hljs-keyword">OFFSET</span> 起始值;<br></code></pre></td></tr></table></figure>
 
 <p>eg:</p>
 <p>假设有一个名为 <code>Employees</code> 的表，结构如下：</p>
@@ -635,9 +630,7 @@
 <td>David</td>
 </tr>
 </tbody></table>
-<p>（7）聚合查询 使用聚合函数对一组数据进行汇总计算的查询</p>
-<p>1、COUNT()统计一张表的数据量</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">COUNT</span>(<span class="hljs-operator">*</span>)  <span class="hljs-keyword">FROM</span> <span class="hljs-operator">&lt;</span>表名<span class="hljs-operator">&gt;</span> <span class="hljs-keyword">WHERE</span> <span class="hljs-operator">&lt;</span>条件表达式<span class="hljs-operator">&gt;</span>；<br><span class="hljs-built_in">COUNT</span>(<span class="hljs-operator">*</span>) 是一个聚合函数，用于计算结果集中的总行数。<span class="hljs-operator">*</span> 表示计算所有行，不管列的内容。<br></code></pre></td></tr></table></figure>
+<h5 id="（7）聚合查询-使用聚合函数对一组数据进行汇总计算的查询，用一些函数"><a href="#（7）聚合查询-使用聚合函数对一组数据进行汇总计算的查询，用一些函数" class="headerlink" title="（7）聚合查询 使用聚合函数对一组数据进行汇总计算的查询，用一些函数"></a>（7）聚合查询 使用聚合函数对一组数据进行汇总计算的查询，用一些函数</h5><h6 id="1、COUNT-统计一张表的数据量"><a href="#1、COUNT-统计一张表的数据量" class="headerlink" title="1、COUNT()统计一张表的数据量"></a>1、COUNT()统计一张表的数据量</h6><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">COUNT</span>(<span class="hljs-operator">*</span>)  <span class="hljs-keyword">FROM</span> <span class="hljs-operator">&lt;</span>表名<span class="hljs-operator">&gt;</span> <span class="hljs-keyword">WHERE</span> <span class="hljs-operator">&lt;</span>条件表达式<span class="hljs-operator">&gt;</span>；<br><span class="hljs-built_in">COUNT</span>(<span class="hljs-operator">*</span>) 是一个聚合函数，用于计算结果集中的总行数。<span class="hljs-operator">*</span> 表示计算所有行，不管列的内容。<br></code></pre></td></tr></table></figure>
 
 <p>eg：</p>
 <p>假设有一个名为 <code>Employees</code> 的表，结构如下：</p>
@@ -696,8 +689,7 @@
 </tr>
 </tbody></table>
 <p>这表示在 <code>Employees</code> 表中，有 3 位员工属于 HR 部门。</p>
-<p>2、SUM() 计算某一列的合计值，该列必须为数值类型</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">SUM</span>(<span class="hljs-operator">*</span>)  <span class="hljs-keyword">FROM</span> <span class="hljs-operator">&lt;</span>表名<span class="hljs-operator">&gt;</span> <span class="hljs-keyword">WHERE</span> <span class="hljs-operator">&lt;</span>条件表达式<span class="hljs-operator">&gt;</span>；<br><span class="hljs-built_in">SUM</span>() 是一个聚合函数，用于计算指定列的总和。<br><span class="hljs-operator">&lt;</span>列名<span class="hljs-operator">&gt;</span> 是你想要计算总和的列的名称<br></code></pre></td></tr></table></figure>
+<h6 id="2、SUM-计算某一列的合计值，该列必须为数值类型"><a href="#2、SUM-计算某一列的合计值，该列必须为数值类型" class="headerlink" title="2、SUM() 计算某一列的合计值，该列必须为数值类型"></a>2、SUM() 计算某一列的合计值，该列必须为数值类型</h6><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">SUM</span>(<span class="hljs-operator">*</span>)  <span class="hljs-keyword">FROM</span> <span class="hljs-operator">&lt;</span>表名<span class="hljs-operator">&gt;</span> <span class="hljs-keyword">WHERE</span> <span class="hljs-operator">&lt;</span>条件表达式<span class="hljs-operator">&gt;</span>；<br><span class="hljs-built_in">SUM</span>() 是一个聚合函数，用于计算指定列的总和。<br><span class="hljs-operator">&lt;</span>列名<span class="hljs-operator">&gt;</span> 是你想要计算总和的列的名称<br></code></pre></td></tr></table></figure>
 
 <p>假设有一个名为 <code>Sales</code> 的表，结构如下：</p>
 <table>
@@ -756,8 +748,7 @@
 <td>450</td>
 </tr>
 </tbody></table>
-<p>3、AVG（） 计算某一列的平均值，该列必须为数值类型</p>
-<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">AVG</span>(*)  <span class="hljs-keyword">FROM</span> &lt;表名&gt; <span class="hljs-keyword">WHERE</span> &lt;条件表达式&gt;；<br><span class="hljs-built_in">AVG</span>() 是一个聚合函数，用于计算指定列的平均值。<br>&lt;列名&gt; 是你想要计算平均值的列的名称。<br></code></pre></td></tr></table></figure>
+<h6 id="3、AVG（）-计算某一列的平均值，该列必须为数值类型"><a href="#3、AVG（）-计算某一列的平均值，该列必须为数值类型" class="headerlink" title="3、AVG（） 计算某一列的平均值，该列必须为数值类型"></a>3、AVG（） 计算某一列的平均值，该列必须为数值类型</h6><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">AVG</span>(*)  <span class="hljs-keyword">FROM</span> &lt;表名&gt; <span class="hljs-keyword">WHERE</span> &lt;条件表达式&gt;；<br><span class="hljs-built_in">AVG</span>() 是一个聚合函数，用于计算指定列的平均值。<br>&lt;列名&gt; 是你想要计算平均值的列的名称。<br></code></pre></td></tr></table></figure>
 
 <p>eg：</p>
 <p>假设有一个名为 <code>Students</code> 的表，结构如下：</p>
@@ -817,8 +808,7 @@
 <td>90</td>
 </tr>
 </tbody></table>
-<p>4、MAX（） 计算某一列的最大值</p>
-<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">MAX</span>(*)  <span class="hljs-keyword">FROM</span> &lt;表名&gt; <span class="hljs-keyword">WHERE</span> &lt;条件表达式&gt;；<br><span class="hljs-built_in">MAX</span>() 是一个聚合函数，用于找出指定列中的最大值。<br>&lt;列名&gt; 是你想要找出最大值的列的名称。<br></code></pre></td></tr></table></figure>
+<h6 id="4、MAX（）-计算某一列的最大值"><a href="#4、MAX（）-计算某一列的最大值" class="headerlink" title="4、MAX（） 计算某一列的最大值"></a>4、MAX（） 计算某一列的最大值</h6><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">MAX</span>(*)  <span class="hljs-keyword">FROM</span> &lt;表名&gt; <span class="hljs-keyword">WHERE</span> &lt;条件表达式&gt;；<br><span class="hljs-built_in">MAX</span>() 是一个聚合函数，用于找出指定列中的最大值。<br>&lt;列名&gt; 是你想要找出最大值的列的名称。<br></code></pre></td></tr></table></figure>
 
 <p>假设有一个名为 <code>Products</code> 的表，结构如下：</p>
 <table>
@@ -878,11 +868,9 @@
 <td>300</td>
 </tr>
 </tbody></table>
-<p>5、MIN（） 计算某一列的最小值</p>
-<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">MIN</span>(*)  <span class="hljs-keyword">FROM</span> &lt;表名&gt; <span class="hljs-keyword">WHERE</span> &lt;条件表达式&gt;；<br></code></pre></td></tr></table></figure>
+<h6 id="5、MIN（）-计算某一列的最小值"><a href="#5、MIN（）-计算某一列的最小值" class="headerlink" title="5、MIN（） 计算某一列的最小值"></a>5、MIN（） 计算某一列的最小值</h6><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">MIN</span>(*)  <span class="hljs-keyword">FROM</span> &lt;表名&gt; <span class="hljs-keyword">WHERE</span> &lt;条件表达式&gt;；<br></code></pre></td></tr></table></figure>
 
-<p>6、GROUP BY 语句用于结合聚合函数，根据一个或多个列对结果集进行分组</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> column_name, aggregate_function(column_name)<br><span class="hljs-keyword">FROM</span> table_name<br><span class="hljs-keyword">WHERE</span> column_name operator <span class="hljs-keyword">value</span><br><span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> column_name;<br><br><span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> column_name: 用于将结果集分组，以便对每个组应用聚合函数<br></code></pre></td></tr></table></figure>
+<h6 id="6、GROUP-BY-语句用于结合聚合函数，根据一个或多个列对结果集进行分组"><a href="#6、GROUP-BY-语句用于结合聚合函数，根据一个或多个列对结果集进行分组" class="headerlink" title="6、GROUP BY 语句用于结合聚合函数，根据一个或多个列对结果集进行分组"></a>6、GROUP BY 语句用于结合聚合函数，根据一个或多个列对结果集进行分组</h6><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> column_name, aggregate_function(column_name)<br><span class="hljs-keyword">FROM</span> table_name<br><span class="hljs-keyword">WHERE</span> column_name operator <span class="hljs-keyword">value</span><br><span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> column_name;<br><br><span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> column_name: 用于将结果集分组，以便对每个组应用聚合函数<br></code></pre></td></tr></table></figure>
 
 <p>eg:</p>
 <p>假设有一个名为 <code>Sales</code> 的表，结构如下：</p>
@@ -941,8 +929,7 @@
 <td>400</td>
 </tr>
 </tbody></table>
-<p>7、HAVING 子句可以让我们筛选分组后的各组数据。</p>
-<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">column_name</span>, aggregate_function(<span class="hljs-built_in">column_name</span>)<br><span class="hljs-keyword">FROM</span> <span class="hljs-built_in">table_name</span><br><span class="hljs-keyword">WHERE</span> <span class="hljs-built_in">column_name</span> <span class="hljs-keyword">operator</span> <span class="hljs-keyword">value</span><br><span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> <span class="hljs-built_in">column_name</span><br><span class="hljs-keyword">HAVING</span> aggregate_function(<span class="hljs-built_in">column_name</span>) <span class="hljs-keyword">operator</span> <span class="hljs-keyword">value</span>;<br><span class="hljs-keyword">HAVING</span> 子句用于对聚合后的结果进行过滤。只有满足该条件的分组才会出现在最终结果中。<br>这里的 aggregate_function(<span class="hljs-built_in">column_name</span>) 是你在 <span class="hljs-keyword">SELECT</span> 中使用的聚合函数，<span class="hljs-keyword">operator</span> 是同样的比较运算符，<span class="hljs-keyword">value</span> 是比较的值。<br></code></pre></td></tr></table></figure>
+<h6 id="7、HAVING-子句可以让我们筛选分组后的各组数据。"><a href="#7、HAVING-子句可以让我们筛选分组后的各组数据。" class="headerlink" title="7、HAVING 子句可以让我们筛选分组后的各组数据。"></a>7、HAVING 子句可以让我们筛选分组后的各组数据。</h6><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">column_name</span>, aggregate_function(<span class="hljs-built_in">column_name</span>)<br><span class="hljs-keyword">FROM</span> <span class="hljs-built_in">table_name</span><br><span class="hljs-keyword">WHERE</span> <span class="hljs-built_in">column_name</span> <span class="hljs-keyword">operator</span> <span class="hljs-keyword">value</span><br><span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> <span class="hljs-built_in">column_name</span><br><span class="hljs-keyword">HAVING</span> aggregate_function(<span class="hljs-built_in">column_name</span>) <span class="hljs-keyword">operator</span> <span class="hljs-keyword">value</span>;<br><span class="hljs-keyword">HAVING</span> 子句用于对聚合后的结果进行过滤。只有满足该条件的分组才会出现在最终结果中。<br>这里的 aggregate_function(<span class="hljs-built_in">column_name</span>) 是你在 <span class="hljs-keyword">SELECT</span> 中使用的聚合函数，<span class="hljs-keyword">operator</span> 是同样的比较运算符，<span class="hljs-keyword">value</span> 是比较的值。<br></code></pre></td></tr></table></figure>
 
 <p>假设有一个名为 <code>Sales</code> 的表，结构如下：</p>
 <table>
@@ -1390,7 +1377,7 @@
 <td>NULL</td>
 </tr>
 </tbody></table>
-<h5 id="使用-UNION："><a href="#使用-UNION：" class="headerlink" title="使用 UNION：**"></a>使用 UNION：**</h5><p>合并两个查询的结果，去除重复的行，可以使用 <code>UNION</code>：</p>
+<h6 id="使用-UNION："><a href="#使用-UNION：" class="headerlink" title="使用 UNION："></a>使用 UNION：</h6><p>合并两个查询的结果，去除重复的行，可以使用 <code>UNION</code>：</p>
 <figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> 表<span class="hljs-number">1</span><br><span class="hljs-keyword">UNION</span><br><span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> 表<span class="hljs-number">2</span>;<br></code></pre></td></tr></table></figure>
 
 <p>例子:</p>
@@ -1862,7 +1849,7 @@
 <td>用不同的格式显示日期&#x2F;时间</td>
 </tr>
 </tbody></table>
-<h4 id="11、修改数据"><a href="#11、修改数据" class="headerlink" title="11、修改数据"></a>11、修改数据</h4><h5 id="（1）插入数据"><a href="#（1）插入数据" class="headerlink" title="（1）插入数据"></a>（1）插入数据</h5><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">INSERT</span> INTO &lt;表名&gt; (字段<span class="hljs-number">1</span>, 字段<span class="hljs-number">2</span>, ...) VALUES (值<span class="hljs-number">1</span>, 值<span class="hljs-number">2</span>, ...);<br></code></pre></td></tr></table></figure>
+<h3 id="11、修改数据"><a href="#11、修改数据" class="headerlink" title="11、修改数据"></a>11、修改数据</h3><h5 id="（1）插入数据"><a href="#（1）插入数据" class="headerlink" title="（1）插入数据"></a>（1）插入数据</h5><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">INSERT</span> INTO &lt;表名&gt; (字段<span class="hljs-number">1</span>, 字段<span class="hljs-number">2</span>, ...) VALUES (值<span class="hljs-number">1</span>, 值<span class="hljs-number">2</span>, ...);<br></code></pre></td></tr></table></figure>
 
 <p>假设有一个名为 <code>employees</code> 的表，包含以下字段：</p>
 <ul>
@@ -1937,7 +1924,7 @@
 
 <p>结果：</p>
 <p><img src="/2024/11/01/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/f4d4cbe1a983ae063efba91851107c6.png" srcset="/img/loading.gif" lazyload alt="f4d4cbe1a983ae063efba91851107c6"></p>
-<h1 id="SQL-视图（Views）"><a href="#SQL-视图（Views）" class="headerlink" title="SQL 视图（Views）"></a>SQL 视图（Views）</h1><h3 id="SQL-CREATE-VIEW-语句"><a href="#SQL-CREATE-VIEW-语句" class="headerlink" title="SQL CREATE VIEW 语句"></a>SQL CREATE VIEW 语句</h3><p>在 SQL 中，视图是基于 SQL 语句的结果集的可视化的表。</p>
+<h1 id="SQL-视图（Views）"><a href="#SQL-视图（Views）" class="headerlink" title="SQL 视图（Views）"></a>SQL 视图（Views）</h1><h2 id="SQL-CREATE-VIEW-语句"><a href="#SQL-CREATE-VIEW-语句" class="headerlink" title="SQL CREATE VIEW 语句"></a>SQL CREATE VIEW 语句</h2><p>在 SQL 中，视图是基于 SQL 语句的结果集的可视化的表。</p>
 <p>视图包含行和列，就像一个真实的表。视图中的字段就是来自一个或多个数据库中的真实的表中的字段。</p>
 <p>您可以向视图添加 SQL 函数、WHERE 以及 JOIN 语句，也可以呈现数据，就像这些数据来自于某个单一的表一样。</p>
 <h3 id="SQL-CREATE-VIEW-实例"><a href="#SQL-CREATE-VIEW-实例" class="headerlink" title="SQL CREATE VIEW 实例"></a>SQL CREATE VIEW 实例</h3><p>假设你有一个包含员工信息的表 employees，包括以下列：employee_id、first_name、last_name、salary 和 department_id，现在，我们将创建一个视图，显示工资高于某个阈值的员工信息。</p>
@@ -1950,7 +1937,7 @@
 
 <p>这将返回所有工资高于 50000 的员工的详细信息，而不需要每次都编写相同的筛选条件。</p>
 <p>值得注意的是，视图本质上是一个虚拟的表，它并不存储数据，而是基于基础表的查询结果生成。因此，如果基础表的数据发生变化，视图的内容也会相应地更新</p>
-<h2 id="SQL-更新视图"><a href="#SQL-更新视图" class="headerlink" title="SQL 更新视图"></a>SQL 更新视图</h2><p>在 SQL 中，你不能直接使用 UPDATE 语句来更新视图，因为视图是基于查询结果生成的虚拟表，而不是实际存储数据的表。更新（<code>UPDATE</code>）语句是用来修改数据库表中的数据的，但视图并不存储实际的数据，因此我们不能直接通过 <code>UPDATE</code> 语句来修改视图中的数据。然而，<strong>某些情况下</strong>，视图是可以通过更新底层表来间接更新的，但这通常是有限制的。更新视图的实质是通过更新视图所基于的表中的数据，然后视图会反映这些变化。其实意思就是直接拿UPDATE语句来更新表中的内容，而不是拿UPDATE来直接更新视图中的数据。</p>
+<h3 id="SQL-更新视图"><a href="#SQL-更新视图" class="headerlink" title="SQL 更新视图"></a>SQL 更新视图</h3><p>在 SQL 中，你不能直接使用 UPDATE 语句来更新视图，因为视图是基于查询结果生成的虚拟表，而不是实际存储数据的表。更新（<code>UPDATE</code>）语句是用来修改数据库表中的数据的，但视图并不存储实际的数据，因此我们不能直接通过 <code>UPDATE</code> 语句来修改视图中的数据。然而，<strong>某些情况下</strong>，视图是可以通过更新底层表来间接更新的，但这通常是有限制的。更新视图的实质是通过更新视图所基于的表中的数据，然后视图会反映这些变化。其实意思就是直接拿UPDATE语句来更新表中的内容，而不是拿UPDATE来直接更新视图中的数据。</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">UPDATE</span> table_name<br><span class="hljs-keyword">SET</span> column1 <span class="hljs-operator">=</span> value1, column2 <span class="hljs-operator">=</span> value2, ...<br><span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">condition</span>;<br></code></pre></td></tr></table></figure>
 
 <p>其中，table_name 是基础表的名称，column1, column2, … 是要更新的列，value1, value2, … 是新的值，condition 是更新的条件。</p>
@@ -1959,7 +1946,7 @@
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-comment">-- 步骤 1: 更新 employees 表中的数据</span><br><span class="hljs-keyword">UPDATE</span> employees<br><span class="hljs-keyword">SET</span> salary <span class="hljs-operator">=</span> <span class="hljs-number">60000</span><br><span class="hljs-keyword">WHERE</span> employee_id <span class="hljs-operator">=</span> <span class="hljs-number">1001</span>;<br><br><span class="hljs-comment">-- 步骤 2: 查询更新后的高工资员工视图</span><br><span class="hljs-keyword">SELECT</span> <span class="hljs-operator">*</span><br><span class="hljs-keyword">FROM</span> high_salary_employees;<br></code></pre></td></tr></table></figure>
 
 <p>这样，你更新了 employees 表中的数据，而视图 high_salary_employees 将反映出这些变化。</p>
-<h2 id="SQL-撤销视图"><a href="#SQL-撤销视图" class="headerlink" title="SQL 撤销视图"></a>SQL 撤销视图</h2><p>在 SQL 中，撤销（或删除）视图是通过使用 DROP VIEW 语句来实现的。</p>
+<h3 id="SQL-撤销视图"><a href="#SQL-撤销视图" class="headerlink" title="SQL 撤销视图"></a>SQL 撤销视图</h3><p>在 SQL 中，撤销（或删除）视图是通过使用 DROP VIEW 语句来实现的。</p>
 <p>DROP VIEW 语句用于从数据库中删除一个已存在的视图。语法如下：</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">DROP</span> <span class="hljs-keyword">VIEW</span> [IF <span class="hljs-keyword">EXISTS</span>] view_name;<br></code></pre></td></tr></table></figure>
 
@@ -1986,7 +1973,7 @@
 <p>在表上创建一个简单的索引。允许使用重复的值：</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">CREATE</span> INDEX index_name<br><span class="hljs-keyword">ON</span> table_name (column1, column2, ...);<br><br>index_name: 索引的名称。<br>table_name: 要创建索引的表。<br>column1, column2,...: 用于创建索引的列（可以是单列或多列）。<br><span class="hljs-keyword">ON</span>: 指定在哪个表上创建索引。<br></code></pre></td></tr></table></figure>
 
-<h4 id="CREATE-INDEX-实例"><a href="#CREATE-INDEX-实例" class="headerlink" title="CREATE INDEX 实例"></a>CREATE INDEX 实例</h4><h5 id="为单个列创建索引"><a href="#为单个列创建索引" class="headerlink" title="为单个列创建索引"></a>为单个列创建索引</h5><p>假设有一个名为 <code>employees</code> 的表：</p>
+<h3 id="CREATE-INDEX-实例"><a href="#CREATE-INDEX-实例" class="headerlink" title="CREATE INDEX 实例"></a>CREATE INDEX 实例</h3><h5 id="为单个列创建索引"><a href="#为单个列创建索引" class="headerlink" title="为单个列创建索引"></a>为单个列创建索引</h5><p>假设有一个名为 <code>employees</code> 的表：</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> employees (<br>    employee_id <span class="hljs-type">INT</span> <span class="hljs-keyword">PRIMARY</span> KEY,<br>    first_name <span class="hljs-type">VARCHAR</span>(<span class="hljs-number">50</span>),<br>    last_name <span class="hljs-type">VARCHAR</span>(<span class="hljs-number">50</span>),<br>    hire_date <span class="hljs-type">DATE</span>,<br>    salary <span class="hljs-type">DECIMAL</span>(<span class="hljs-number">10</span>, <span class="hljs-number">2</span>)<br>);<br></code></pre></td></tr></table></figure>
 
 <h5 id="场景描述："><a href="#场景描述：" class="headerlink" title="场景描述："></a>场景描述：</h5><p>我们经常需要查询某个员工的 <code>last_name</code>，比如根据姓氏来查询员工，或者按 <code>last_name</code> 排序列出所有员工。如果不创建索引，数据库在执行这些查询时会扫描整个 <code>employees</code> 表，这样会很慢，尤其是在表中有很多数据时。</p>
@@ -2308,7 +2295,7 @@
 </tbody></table>
 <figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs autohotkey">num 列显示的是每个学生选修的课程数量（通过 `count(*)` 计算）。<br>agrade列显示的是每个学生的成绩平均值（通过 `avg(grade)` 计算）。<br></code></pre></td></tr></table></figure>
 
-<h5 id="6-1通过视图V-IS，将学号为“08001”的学生姓名更改为“张小立”-并查看结果"><a href="#6-1通过视图V-IS，将学号为“08001”的学生姓名更改为“张小立”-并查看结果" class="headerlink" title="6.1通过视图V_IS，将学号为“08001”的学生姓名更改为“张小立” ,并查看结果;"></a>6.1通过视图V_IS，将学号为“08001”的学生姓名更改为“张小立” ,并查看结果;</h5><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">UPDATE</span> V_IS<br><span class="hljs-keyword">SET</span> Sname=<span class="hljs-string">&#x27;张小立&#x27;</span><br><span class="hljs-keyword">WHERE</span> Sno=<span class="hljs-string">&#x27;08001&#x27;</span>;<br><span class="hljs-keyword">SELECT</span> *<br><span class="hljs-keyword">FROM</span> V_IS;<br><br><br><span class="hljs-keyword">UPDATE</span> V_IS<br><span class="hljs-keyword">SET</span> Sname=<span class="hljs-string">&#x27;张小立&#x27;</span><br>这个语句就是更新数据：<br><span class="hljs-keyword">SELECT</span> *<br><span class="hljs-keyword">FROM</span> V_IS;<br>此语句会查询视图 V_IS 中的所有数据，包括所有列。它会返回 V_IS 中的当前数据，包括你在上一步通过 <span class="hljs-keyword">UPDATE</span> 修改的数据。<br></code></pre></td></tr></table></figure>
+<h5 id="6-1通过视图V-IS，将学号为“08001”的学生姓名更改为“张小立”-并查看结果"><a href="#6-1通过视图V-IS，将学号为“08001”的学生姓名更改为“张小立”-并查看结果" class="headerlink" title="6.1通过视图V_IS，将学号为“08001”的学生姓名更改为“张小立” ,并查看结果;"></a>6.1通过视图V_IS，将学号为“08001”的学生姓名更改为“张小立” ,并查看结果;</h5><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs routeros">UPDATE V_IS<br><span class="hljs-built_in">SET</span> <span class="hljs-attribute">Sname</span>=<span class="hljs-string">&#x27;张小立&#x27;</span><br>WHERE <span class="hljs-attribute">Sno</span>=<span class="hljs-string">&#x27;08001&#x27;</span>;<br>SELECT *<br><span class="hljs-keyword">FROM</span> V_IS;<br><br>UPDATE V_IS<br><span class="hljs-built_in">SET</span> <span class="hljs-attribute">Sname</span>=<span class="hljs-string">&#x27;张小立&#x27;</span><br>WHERE <span class="hljs-attribute">Sno</span>=<span class="hljs-string">&#x27;08001&#x27;</span>;<br>这个语句就是更新数据：<br>SELECT *<br><span class="hljs-keyword">FROM</span> V_IS;<br>此语句会查询视图 V_IS 中的所有数据，包括所有列。它会返回 V_IS 中的当前数据，包括你在上一步通过 UPDATE 修改的数据。<br></code></pre></td></tr></table></figure>
 
 <p><strong>更新数据</strong></p>
 <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">UPDATE &lt;表名&gt; <span class="hljs-built_in">SET</span> 字段<span class="hljs-attribute">1</span>=值1, 字段<span class="hljs-attribute">2</span>=值2  WHERE &lt;条件表达式&gt;;<br></code></pre></td></tr></table></figure>
@@ -2382,20 +2369,307 @@
 <p>如上所示，**学号 <code>&#39;08002&#39;</code> 的学生的姓名改为了 <code>&#39;刘晓晨&#39;</code>**，但是学号 <code>&#39;08002&#39;</code> 没有被改变。更新的不是学号 <code>sno</code>，而是学生的姓名 <code>sname</code>，学号仍然保持不变。</p>
 <h5 id="7-利用表和前面所建视图，查询平均成绩为90-分以上的学生学号、姓名和成绩；"><a href="#7-利用表和前面所建视图，查询平均成绩为90-分以上的学生学号、姓名和成绩；" class="headerlink" title="7.利用表和前面所建视图，查询平均成绩为90 分以上的学生学号、姓名和成绩；"></a>7.利用表和前面所建视图，查询平均成绩为90 分以上的学生学号、姓名和成绩；</h5><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">SELECT</span> student.sno , student.sname , V_AVG_S_G.agrade<br><span class="hljs-keyword">FROM</span> V_AVG_S_G , student<br><span class="hljs-keyword">WHERE</span> student.sno = V_AVG_S_G.sno<br><span class="hljs-keyword">HAVING</span> V_AVG_S_G.agrade &gt;<span class="hljs-number">90</span> ;<br></code></pre></td></tr></table></figure>
 
-<h1 id="试验系统作业5"><a href="#试验系统作业5" class="headerlink" title="试验系统作业5"></a>试验系统作业5</h1><p>应用INSERT,UPDATE,DELETE语句进行更新操作；</p>
-<p>  （1）插入如下学生记录（学号：08030，姓名：李莉，年龄：18）</p>
-<p>  （2）插入如下选课记录（08030，1）</p>
-<p>  （3）计算机系学生年龄改成20</p>
-<p>  （4）数学系所有学生成绩改成0</p>
-<p>  （5）把低于总平均成绩的女同学成绩提高5分</p>
-<p>  （6）修改2号课程的成绩，若成绩小于75分提高5％，成绩大于75时提高4％（两个语句实现，注意顺序）</p>
-<p>  （7）删除08030学生信息</p>
-<p>  （8）删除SC表中无成绩的记录</p>
-<p>  （9）删除张娜的选课记录</p>
-<p>  （10）删除数学系所有学生选课记录</p>
-<p>  （11）删除不及格的学生选课记录</p>
-<p>  （12）查询每一门课程成绩都大于等于80分的学生学号、姓名和性别，把值送往另一个已经存在的基本表STU(SNO,SNAME,SSEX)中</p>
-<p>  （13）统计3门以上课程不及格的学生，把相应的学生姓名、系别追加到另外一个表中</p>
+<h1 id="试验系统作业5"><a href="#试验系统作业5" class="headerlink" title="试验系统作业5"></a>试验系统作业5</h1><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><code class="hljs n1ql">应用<span class="hljs-keyword">INSERT</span>,<span class="hljs-keyword">UPDATE</span>,<span class="hljs-keyword">DELETE</span>语句进行更新操作；<br><br>  （<span class="hljs-number">1</span>）插入如下学生记录（学号：<span class="hljs-number">08030</span>，姓名：李莉，年龄：<span class="hljs-number">18</span>）<br><br>  （<span class="hljs-number">2</span>）插入如下选课记录（<span class="hljs-number">08030</span>，<span class="hljs-number">1</span>）<br><br>  （<span class="hljs-number">3</span>）计算机系学生年龄改成<span class="hljs-number">20</span><br><br>  （<span class="hljs-number">4</span>）数学系所有学生成绩改成<span class="hljs-number">0</span><br><br>  （<span class="hljs-number">5</span>）把低于总平均成绩的女同学成绩提高<span class="hljs-number">5</span>分<br><br>  （<span class="hljs-number">6</span>）修改<span class="hljs-number">2</span>号课程的成绩，若成绩小于<span class="hljs-number">75</span>分提高<span class="hljs-number">5</span>％，成绩大于<span class="hljs-number">75</span>时提高<span class="hljs-number">4</span>％（两个语句实现，注意顺序）<br><br>  （<span class="hljs-number">7</span>）删除<span class="hljs-number">08030</span>学生信息<br><br>  （<span class="hljs-number">8</span>）删除SC表中无成绩的记录<br><br>  （<span class="hljs-number">9</span>）删除张娜的选课记录<br><br>  （<span class="hljs-number">10</span>）删除数学系所有学生选课记录<br><br>  （<span class="hljs-number">11</span>）删除不及格的学生选课记录<br><br>  （<span class="hljs-number">12</span>）查询每一门课程成绩都大于等于<span class="hljs-number">80</span>分的学生学号、姓名和性别，把值送往另一个已经存在的基本表STU(SNO,SNAME,SSEX)中<br><br>  （<span class="hljs-number">13</span>）统计<span class="hljs-number">3</span>门以上课程不及格的学生，把相应的学生姓名、系别追加到另外一个表中<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-number">1</span>）插入学生记录（学号：<span class="hljs-number">08030</span>，姓名：李莉，年龄：<span class="hljs-number">18</span>）<br><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> student (SNO, SNAME, SAGE) <br><span class="hljs-keyword">VALUES</span> (<span class="hljs-string">&#x27;08030&#x27;</span>, <span class="hljs-string">&#x27;李莉&#x27;</span>, <span class="hljs-number">18</span>);<br><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> 语句用于向 student 表插入一条新的记录，包含学生的学号（SNO）、姓名（SNAME）和年龄（SAGE）。<br><br><br>（<span class="hljs-number">2</span>）插入选课记录（<span class="hljs-number">08030</span>，<span class="hljs-number">1</span>）<br><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> SC (SNO, CNO) <br><span class="hljs-keyword">VALUES</span> (<span class="hljs-string">&#x27;08030&#x27;</span>, <span class="hljs-number">1</span>);<br><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> 语句用于向 SC（选课）表插入一条记录，表示学号为<span class="hljs-number">08030</span>的学生选择了课程编号为<span class="hljs-number">1</span>的课程。<br><br><br>（<span class="hljs-number">3</span>）计算机系学生年龄改成<span class="hljs-number">20</span><br><span class="hljs-keyword">UPDATE</span> student <br><span class="hljs-keyword">SET</span> SAGE <span class="hljs-operator">=</span> <span class="hljs-number">20</span> <br><span class="hljs-keyword">WHERE</span> DEPARTMENT <span class="hljs-operator">=</span> <span class="hljs-string">&#x27;计算机系&#x27;</span>;<br><span class="hljs-keyword">UPDATE</span> 语句用于更新 student 表中的数据，将计算机系的学生的年龄（SAGE）设置为<span class="hljs-number">20</span>。<br><br><br>（<span class="hljs-number">4</span>）数学系所有学生成绩改成<span class="hljs-number">0</span><br><span class="hljs-keyword">UPDATE</span> SC <br><span class="hljs-keyword">SET</span> grade <span class="hljs-operator">=</span> <span class="hljs-number">0</span> <br><span class="hljs-keyword">WHERE</span> SNO <span class="hljs-keyword">IN</span> (<span class="hljs-keyword">SELECT</span> SNO <span class="hljs-keyword">FROM</span> student <span class="hljs-keyword">WHERE</span> DEPARTMENT <span class="hljs-operator">=</span> <span class="hljs-string">&#x27;数学系&#x27;</span>);<br><span class="hljs-keyword">UPDATE</span> 语句将数学系所有学生的成绩（grade）设置为<span class="hljs-number">0</span>。通过子查询，首先查找数学系的所有学生学号（SNO），然后更新 SC 表中的成绩。<br><br><br>（<span class="hljs-number">5</span>）把低于总平均成绩的女同学成绩提高<span class="hljs-number">5</span>分<br><span class="hljs-keyword">UPDATE</span> SC <br><span class="hljs-keyword">SET</span> grade <span class="hljs-operator">=</span> grade <span class="hljs-operator">+</span> <span class="hljs-number">5</span> <br><span class="hljs-keyword">WHERE</span> SNO <span class="hljs-keyword">IN</span> (<br>    <span class="hljs-keyword">SELECT</span> SNO <span class="hljs-keyword">FROM</span> student <span class="hljs-keyword">WHERE</span> SEX <span class="hljs-operator">=</span> <span class="hljs-string">&#x27;女&#x27;</span> <span class="hljs-keyword">AND</span> SNO <span class="hljs-keyword">IN</span> (<br>        <span class="hljs-keyword">SELECT</span> SNO <span class="hljs-keyword">FROM</span> SC <br>        <span class="hljs-keyword">WHERE</span> grade <span class="hljs-operator">&lt;</span> (<span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">AVG</span>(grade) <span class="hljs-keyword">FROM</span> SC)<br>    )<br>);<br>这里使用了多层子查询。首先计算总成绩的平均值（<span class="hljs-built_in">AVG</span>(grade)），然后查找成绩低于该平均值的女性学生，并将她们的成绩提高<span class="hljs-number">5</span>分。<br><br><br>（<span class="hljs-number">6</span>）修改<span class="hljs-number">2</span>号课程的成绩，若成绩小于<span class="hljs-number">75</span>分提高<span class="hljs-number">5</span><span class="hljs-operator">%</span>，成绩大于<span class="hljs-number">75</span>时提高<span class="hljs-number">4</span><span class="hljs-operator">%</span><br><span class="hljs-comment">-- 对成绩小于75的学生提高5%</span><br><span class="hljs-keyword">UPDATE</span> SC <br><span class="hljs-keyword">SET</span> grade <span class="hljs-operator">=</span> grade <span class="hljs-operator">*</span> <span class="hljs-number">1.05</span> <br><span class="hljs-keyword">WHERE</span> CNO <span class="hljs-operator">=</span> <span class="hljs-number">2</span> <span class="hljs-keyword">AND</span> grade <span class="hljs-operator">&lt;</span> <span class="hljs-number">75</span>;<br><br><span class="hljs-comment">-- 对成绩大于75的学生提高4%</span><br><span class="hljs-keyword">UPDATE</span> SC <br><span class="hljs-keyword">SET</span> grade <span class="hljs-operator">=</span> grade <span class="hljs-operator">*</span> <span class="hljs-number">1.04</span> <br><span class="hljs-keyword">WHERE</span> CNO <span class="hljs-operator">=</span> <span class="hljs-number">2</span> <span class="hljs-keyword">AND</span> grade <span class="hljs-operator">&gt;=</span> <span class="hljs-number">75</span>;<br>第一条 <span class="hljs-keyword">UPDATE</span> 语句针对课程号为<span class="hljs-number">2</span>且成绩小于<span class="hljs-number">75</span>分的学生，将成绩提高<span class="hljs-number">5</span><span class="hljs-operator">%</span>。<br>第二条 <span class="hljs-keyword">UPDATE</span> 语句针对课程号为<span class="hljs-number">2</span>且成绩大于或等于<span class="hljs-number">75</span>分的学生，将成绩提高<span class="hljs-number">4</span><span class="hljs-operator">%</span>。<br><br><br>（<span class="hljs-number">7</span>）删除学号为<span class="hljs-number">08030</span>的学生信息<br><span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> student <br><span class="hljs-keyword">WHERE</span> SNO <span class="hljs-operator">=</span> <span class="hljs-string">&#x27;08030&#x27;</span>;<br><span class="hljs-keyword">DELETE</span> 语句删除 student 表中学号为<span class="hljs-number">08030</span>的学生记录。<br><br><br>（<span class="hljs-number">8</span>）删除SC表中无成绩的记录<br><span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> SC <br><span class="hljs-keyword">WHERE</span> grade <span class="hljs-keyword">IS</span> <span class="hljs-keyword">NULL</span>;<br>删除 SC 表中成绩为空（<span class="hljs-keyword">NULL</span>）的选课记录。<br><br><br>（<span class="hljs-number">9</span>）删除张娜的选课记录<br><span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> SC <br><span class="hljs-keyword">WHERE</span> SNO <span class="hljs-operator">=</span> (<span class="hljs-keyword">SELECT</span> SNO <span class="hljs-keyword">FROM</span> student <span class="hljs-keyword">WHERE</span> SNAME <span class="hljs-operator">=</span> <span class="hljs-string">&#x27;张娜&#x27;</span>);<br>通过子查询，首先查找姓名为张娜的学生的学号（SNO），然后删除 SC 表中对应的选课记录。<br><br><br>（<span class="hljs-number">10</span>）删除数学系所有学生选课记录<br><span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> SC <br><span class="hljs-keyword">WHERE</span> SNO <span class="hljs-keyword">IN</span> (<span class="hljs-keyword">SELECT</span> SNO <span class="hljs-keyword">FROM</span> student <span class="hljs-keyword">WHERE</span> DEPARTMENT <span class="hljs-operator">=</span> <span class="hljs-string">&#x27;数学系&#x27;</span>);<br>删除 SC 表中所有数学系学生的选课记录。通过子查询，获取数学系学生的学号（SNO）。<br><br><br>（<span class="hljs-number">11</span>）删除不及格的学生选课记录<br><span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> SC <br><span class="hljs-keyword">WHERE</span> grade <span class="hljs-operator">&lt;</span> <span class="hljs-number">60</span>;<br>删除 SC 表中成绩低于<span class="hljs-number">60</span>的选课记录（假设<span class="hljs-number">60</span>为及格线）。<br><br><br>（<span class="hljs-number">12</span>）查询每一门课程成绩都大于等于<span class="hljs-number">80</span>分的学生学号、姓名和性别，把值送往另一个已经存在的基本表STU(SNO, SNAME, SSEX)中<br><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> STU (SNO, SNAME, SSEX)<br><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">DISTINCT</span> s.SNO, s.SNAME, s.SSEX<br><span class="hljs-keyword">FROM</span> student s<br><span class="hljs-keyword">JOIN</span> SC sc <span class="hljs-keyword">ON</span> s.SNO <span class="hljs-operator">=</span> sc.SNO<br><span class="hljs-keyword">WHERE</span> sc.grade <span class="hljs-operator">&gt;=</span> <span class="hljs-number">80</span><br><span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> s.SNO, s.SNAME, s.SSEX<br><span class="hljs-keyword">HAVING</span> <span class="hljs-built_in">COUNT</span>(<span class="hljs-keyword">DISTINCT</span> sc.CNO) <span class="hljs-operator">=</span> (<span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">COUNT</span>(<span class="hljs-operator">*</span>) <span class="hljs-keyword">FROM</span> course);<br>这个语句首先筛选出所有成绩大于等于<span class="hljs-number">80</span>分的学生，并把他们的学号、姓名和性别插入到 STU 表中。<br><span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> 和 <span class="hljs-keyword">HAVING</span> 用来确保每个学生的每门课程成绩都大于等于<span class="hljs-number">80</span>。<br><br><br>（<span class="hljs-number">13</span>）统计<span class="hljs-number">3</span>门以上课程不及格的学生，把相应的学生姓名、系别追加到另外一个表中<br><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> failed_students (SNAME, DEPARTMENT)<br><span class="hljs-keyword">SELECT</span> s.SNAME, s.DEPARTMENT<br><span class="hljs-keyword">FROM</span> student s<br><span class="hljs-keyword">JOIN</span> SC sc <span class="hljs-keyword">ON</span> s.SNO <span class="hljs-operator">=</span> sc.SNO<br><span class="hljs-keyword">WHERE</span> sc.grade <span class="hljs-operator">&lt;</span> <span class="hljs-number">60</span><br><span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> s.SNO, s.SNAME, s.DEPARTMENT<br><span class="hljs-keyword">HAVING</span> <span class="hljs-built_in">COUNT</span>(<span class="hljs-keyword">DISTINCT</span> sc.CNO) <span class="hljs-operator">&gt;</span> <span class="hljs-number">3</span>;<br>这个查询通过连接 student 表和 SC 表，筛选出不及格（成绩小于<span class="hljs-number">60</span>）超过<span class="hljs-number">3</span>门课程的学生，并将他们的姓名和系别插入到 failed_students 表中。<br></code></pre></td></tr></table></figure>
+
+<h5 id="1）插入学生记录（学号：08030，姓名：李莉，年龄：18）"><a href="#1）插入学生记录（学号：08030，姓名：李莉，年龄：18）" class="headerlink" title="1）插入学生记录（学号：08030，姓名：李莉，年龄：18）"></a>1）插入学生记录（学号：08030，姓名：李莉，年龄：18）</h5><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> student (SNO, SNAME, SAGE) <br><span class="hljs-keyword">VALUES</span> (<span class="hljs-string">&#x27;08030&#x27;</span>, <span class="hljs-string">&#x27;李莉&#x27;</span>, <span class="hljs-number">18</span>);<br></code></pre></td></tr></table></figure>
+
+
+<p>INSERT INTO 语句用于向 student 表插入一条新的记录，包含学生的学号（SNO）、姓名（SNAME）和年龄（SAGE）。</p>
+<h5 id="（2）插入选课记录（08030，1）"><a href="#（2）插入选课记录（08030，1）" class="headerlink" title="（2）插入选课记录（08030，1）"></a>（2）插入选课记录（08030，1）</h5><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> SC (SNO, CNO) <br><span class="hljs-keyword">VALUES</span> (<span class="hljs-string">&#x27;08030&#x27;</span>, <span class="hljs-number">1</span>);<br></code></pre></td></tr></table></figure>
+
+
+<p>INSERT INTO 语句用于向 SC（选课）表插入一条记录，表示学号为08030的学生选择了课程编号为1的课程。</p>
+<h5 id="（3）计算机系学生年龄改成20"><a href="#（3）计算机系学生年龄改成20" class="headerlink" title="（3）计算机系学生年龄改成20"></a>（3）计算机系学生年龄改成20</h5><figure class="highlight gams"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs gams">UPDATE student <br><span class="hljs-keyword">SET</span> SAGE <span class="hljs-comment">= 20</span> <br>WHERE <span class="hljs-comment">DEPARTMENT =</span> <span class="hljs-comment">&#x27;is&#x27;</span>;<br></code></pre></td></tr></table></figure>
+
+
+<p>UPDATE 语句用于更新 student 表中的数据，将计算机系的学生的年龄（SAGE）设置为20。</p>
+<h5 id="（4）数学系所有学生成绩改成0"><a href="#（4）数学系所有学生成绩改成0" class="headerlink" title="（4）数学系所有学生成绩改成0"></a>（4）数学系所有学生成绩改成0</h5><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">UPDATE</span> SC <br><span class="hljs-keyword">SET</span> grade = <span class="hljs-number">0</span> <br><span class="hljs-keyword">WHERE</span> SNO <span class="hljs-keyword">IN</span> (<span class="hljs-keyword">SELECT</span> SNO <span class="hljs-keyword">FROM</span> student <span class="hljs-keyword">WHERE</span> sdept = <span class="hljs-string">&#x27;ma&#x27;</span>);<br></code></pre></td></tr></table></figure>
+
+<p>IN语句的解释：</p>
+<p>下面的 SQL 语句选取 name 为 “Google” 或 “菜鸟教程” 的所有网站：</p>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> Websites<br> <span class="hljs-keyword">WHERE</span> <span class="hljs-type">name</span> <span class="hljs-keyword">IN</span> (<span class="hljs-string">&#x27;Google&#x27;</span>,<span class="hljs-string">&#x27;菜鸟教程&#x27;</span>);<br></code></pre></td></tr></table></figure>
+
+<p>UPDATE 语句将数学系所有学生的成绩（grade）设置为0。通过子查询，首先查找数学系的所有学生学号（SNO），然后更新 SC 表中的成绩。</p>
+<h5 id="（5）把低于总平均成绩的女同学成绩提高5分"><a href="#（5）把低于总平均成绩的女同学成绩提高5分" class="headerlink" title="（5）把低于总平均成绩的女同学成绩提高5分"></a>（5）把低于总平均成绩的女同学成绩提高5分</h5><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">UPDATE</span> SC <br><span class="hljs-keyword">SET</span> grade = grade + <span class="hljs-number">5</span> <br><span class="hljs-keyword">WHERE</span> SNO <span class="hljs-keyword">IN</span> (<br>    <span class="hljs-keyword">SELECT</span> SNO <span class="hljs-keyword">FROM</span> student <span class="hljs-keyword">WHERE</span> SSEX = <span class="hljs-string">&#x27;女&#x27;</span> <span class="hljs-keyword">AND</span> SNO <span class="hljs-keyword">IN</span> (<br>        <span class="hljs-keyword">SELECT</span> SNO <span class="hljs-keyword">FROM</span> SC <br>        <span class="hljs-keyword">WHERE</span> grade &lt; (<span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">AVG</span>(grade) <span class="hljs-keyword">FROM</span> SC)<br>    )<br>);<br></code></pre></td></tr></table></figure>
+
+
+<p>这里使用了多层子查询。首先计算总成绩的平均值（AVG(grade)），然后查找成绩低于该平均值的女性学生，并将她们的成绩提高5分。</p>
+<h5 id="（6）修改2号课程的成绩，若成绩小于75分提高5-，成绩大于75时提高4"><a href="#（6）修改2号课程的成绩，若成绩小于75分提高5-，成绩大于75时提高4" class="headerlink" title="（6）修改2号课程的成绩，若成绩小于75分提高5%，成绩大于75时提高4%"></a>（6）修改2号课程的成绩，若成绩小于75分提高5%，成绩大于75时提高4%</h5><p>– 对成绩小于75的学生提高5%</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">UPDATE</span> SC <br><span class="hljs-attribute">SET</span> grade = grade * <span class="hljs-number">1</span>.<span class="hljs-number">05</span> <br><span class="hljs-attribute">WHERE</span> CNO = <span class="hljs-number">2</span> AND grade &lt; <span class="hljs-number">75</span>;<br></code></pre></td></tr></table></figure>
+
+<p>– 对成绩大于75的学生提高4%</p>
+<figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs abnf">UPDATE SC <br>SET grade <span class="hljs-operator">=</span> grade * <span class="hljs-number">1.04</span> <br>WHERE CNO <span class="hljs-operator">=</span> <span class="hljs-number">2</span> AND grade &gt;<span class="hljs-operator">=</span> <span class="hljs-number">75</span><span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure>
+
+<p>第一条 UPDATE 语句针对课程号为2且成绩小于75分的学生，将成绩提高5%。<br>第二条 UPDATE 语句针对课程号为2且成绩大于或等于75分的学生，将成绩提高4%。</p>
+<h5 id="（7）删除学号为08030的学生信息"><a href="#（7）删除学号为08030的学生信息" class="headerlink" title="（7）删除学号为08030的学生信息"></a>（7）删除学号为08030的学生信息</h5><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> student <br><span class="hljs-keyword">WHERE</span> SNO = <span class="hljs-string">&#x27;08030&#x27;</span>;<br></code></pre></td></tr></table></figure>
+
+
+<p>DELETE 语句删除 student 表中学号为08030的学生记录。</p>
+<h5 id="（8）删除SC表中无成绩的记录"><a href="#（8）删除SC表中无成绩的记录" class="headerlink" title="（8）删除SC表中无成绩的记录"></a>（8）删除SC表中无成绩的记录</h5><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> SC <br><span class="hljs-keyword">WHERE</span> grade <span class="hljs-keyword">IS</span> <span class="hljs-literal">NULL</span>;<br></code></pre></td></tr></table></figure>
+
+
+<p>删除 SC 表中成绩为空（NULL）的选课记录。</p>
+<h5 id="（9）删除张娜的选课记录"><a href="#（9）删除张娜的选课记录" class="headerlink" title="（9）删除张娜的选课记录"></a>（9）删除张娜的选课记录</h5><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> SC <br><span class="hljs-keyword">WHERE</span> SNO = (<span class="hljs-keyword">SELECT</span> SNO <span class="hljs-keyword">FROM</span> student <span class="hljs-keyword">WHERE</span> SNAME = <span class="hljs-string">&#x27;张娜&#x27;</span>);<br></code></pre></td></tr></table></figure>
+
+
+<p>通过子查询，首先查找姓名为张娜的学生的学号（SNO），然后删除 SC 表中对应的选课记录。</p>
+<h5 id="（10）删除数学系所有学生选课记录"><a href="#（10）删除数学系所有学生选课记录" class="headerlink" title="（10）删除数学系所有学生选课记录"></a>（10）删除数学系所有学生选课记录</h5><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> SC <br><span class="hljs-keyword">WHERE</span> SNO <span class="hljs-keyword">IN</span> (<span class="hljs-keyword">SELECT</span> SNO <span class="hljs-keyword">FROM</span> student <span class="hljs-keyword">WHERE</span> DEPARTMENT = <span class="hljs-string">&#x27;数学系&#x27;</span>);<br></code></pre></td></tr></table></figure>
+
+
+<p>删除 SC 表中所有数学系学生的选课记录。通过子查询，获取数学系学生的学号（SNO）。</p>
+<h5 id="（11）删除不及格的学生选课记录"><a href="#（11）删除不及格的学生选课记录" class="headerlink" title="（11）删除不及格的学生选课记录"></a>（11）删除不及格的学生选课记录</h5><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> SC <br><span class="hljs-keyword">WHERE</span> grade &lt; <span class="hljs-number">60</span>;<br></code></pre></td></tr></table></figure>
+
+
+<p>删除 SC 表中成绩低于60的选课记录（假设60为及格线）。</p>
+<h5 id="（12）查询每一门课程成绩都大于等于80分的学生学号、姓名和性别，把值送往另一个已经存在的基本表STU-SNO-SNAME-SSEX-中"><a href="#（12）查询每一门课程成绩都大于等于80分的学生学号、姓名和性别，把值送往另一个已经存在的基本表STU-SNO-SNAME-SSEX-中" class="headerlink" title="（12）查询每一门课程成绩都大于等于80分的学生学号、姓名和性别，把值送往另一个已经存在的基本表STU(SNO, SNAME, SSEX)中"></a>（12）查询每一门课程成绩都大于等于80分的学生学号、姓名和性别，把值送往另一个已经存在的基本表STU(SNO, SNAME, SSEX)中</h5><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> STU (SNO, SNAME, SSEX)<br><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">DISTINCT</span> s.SNO, s.SNAME, s.SSEX<br><span class="hljs-keyword">FROM</span> student s<br><span class="hljs-keyword">JOIN</span> SC sc <span class="hljs-keyword">ON</span> s.SNO = sc.SNO<br><span class="hljs-keyword">WHERE</span> sc.grade &gt;= <span class="hljs-number">80</span><br><span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> s.SNO, s.SNAME, s.SSEX<br><span class="hljs-keyword">HAVING</span> <span class="hljs-built_in">COUNT</span>(<span class="hljs-keyword">DISTINCT</span> sc.CNO) = (<span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">COUNT</span>(*) <span class="hljs-keyword">FROM</span> course);<br></code></pre></td></tr></table></figure>
+
+<p><code>DISTINCT</code> 确保结果集中没有重复的行。</p>
+<h6 id="JOIN的作用："><a href="#JOIN的作用：" class="headerlink" title="JOIN的作用："></a><strong>JOIN的作用：</strong></h6><p>如果表1和表2之间有关系，比如通过某个键（如 <code>id</code>），你可以使用 <code>JOIN</code> 来查询它们的组合：</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">SELECT</span> *<br><span class="hljs-attribute">FROM</span> 表<span class="hljs-number">1</span><br><span class="hljs-attribute">JOIN</span> 表<span class="hljs-number">2</span> <span class="hljs-literal">ON</span> 表<span class="hljs-number">1</span>.id = 表<span class="hljs-number">2</span>.foreign_id;<br></code></pre></td></tr></table></figure>
+
+<p>这里，<code>表1.id</code> 是表1中的主键，<code>表2.foreign_id</code> 是表2中对应的外键。</p>
+<p>eg:</p>
+<p>假设我们有两个表：</p>
+<p>用户表 (<code>users</code>):</p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Alice</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Bob</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Carol</td>
+</tr>
+</tbody></table>
+<p>订单表 (<code>orders</code>):</p>
+<table>
+<thead>
+<tr>
+<th>order_id</th>
+<th>user_id</th>
+<th>product</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>101</td>
+<td>1</td>
+<td>Laptop</td>
+</tr>
+<tr>
+<td>102</td>
+<td>1</td>
+<td>Mouse</td>
+</tr>
+<tr>
+<td>103</td>
+<td>2</td>
+<td>Keyboard</td>
+</tr>
+<tr>
+<td>104</td>
+<td>3</td>
+<td>Monitor</td>
+</tr>
+<tr>
+<td>105</td>
+<td>4</td>
+<td>Printer</td>
+</tr>
+</tbody></table>
+<p>我们希望查询每个用户的订单信息，可以使用以下 SQL 查询：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> <span class="hljs-operator">*</span><br><span class="hljs-keyword">FROM</span> users<br><span class="hljs-keyword">JOIN</span> orders <span class="hljs-keyword">ON</span> users.id <span class="hljs-operator">=</span> orders.user_id;<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li><strong><code>SELECT \*</code></strong>: 我们选择所有列，包括 <code>users</code> 表和 <code>orders</code> 表的所有字段。</li>
+<li><strong><code>FROM users</code></strong>: 从 <code>users</code> 表开始查询。</li>
+<li><strong><code>JOIN orders ON users.id = orders.user_id</code></strong>: 将 <code>users</code> 表和 <code>orders</code> 表联接，条件是 <code>users</code> 表的 <code>id</code> 与 <code>orders</code> 表的 <code>user_id</code> 匹配。</li>
+</ul>
+<p>执行这个查询后，我们会得到以下结果：</p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>name</th>
+<th>order_id</th>
+<th>user_id</th>
+<th>product</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Alice</td>
+<td>101</td>
+<td>1</td>
+<td>Laptop</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Alice</td>
+<td>102</td>
+<td>1</td>
+<td>Mouse</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Bob</td>
+<td>103</td>
+<td>2</td>
+<td>Keyboard</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Carol</td>
+<td>104</td>
+<td>3</td>
+<td>Monitor</td>
+</tr>
+</tbody></table>
+<h6 id="GROUP-BY的作用-用于结合聚合函数，根据一个或多个列对结果集进行分组"><a href="#GROUP-BY的作用-用于结合聚合函数，根据一个或多个列对结果集进行分组" class="headerlink" title="GROUP BY的作用 用于结合聚合函数，根据一个或多个列对结果集进行分组"></a><strong>GROUP BY的作用 用于结合聚合函数，根据一个或多个列对结果集进行分组</strong></h6><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> column_name, aggregate_function(column_name)<br><span class="hljs-keyword">FROM</span> table_name<br><span class="hljs-keyword">WHERE</span> column_name operator <span class="hljs-keyword">value</span><br><span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> column_name;<br><br><span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> column_name: 用于将结果集分组，以便对每个组应用聚合函数<br></code></pre></td></tr></table></figure>
+
+<p>eg:</p>
+<p>假设有一个名为 <code>Sales</code> 的表，结构如下：</p>
+<table>
+<thead>
+<tr>
+<th>product_id</th>
+<th>sales_amount</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>100</td>
+</tr>
+<tr>
+<td>2</td>
+<td>200</td>
+</tr>
+<tr>
+<td>1</td>
+<td>150</td>
+</tr>
+<tr>
+<td>2</td>
+<td>300</td>
+</tr>
+<tr>
+<td>3</td>
+<td>400</td>
+</tr>
+</tbody></table>
+<p>如果你想计算每个产品的总销售额，可以使用以下 SQL 语句：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> product_id, <span class="hljs-built_in">SUM</span>(sales_amount)<br><span class="hljs-keyword">FROM</span> Sales<br><span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> product_id;<br></code></pre></td></tr></table></figure>
+
+<p>如果你想计算销售额大于 150 的产品的总销售额，可以这样写：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> product_id, <span class="hljs-built_in">SUM</span>(sales_amount)<br><span class="hljs-keyword">FROM</span> Sales<br><span class="hljs-keyword">WHERE</span> sales_amount <span class="hljs-operator">&gt;</span> <span class="hljs-number">150</span><br><span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> product_id;<br></code></pre></td></tr></table></figure>
+
+<p>对于第一个查询，结果将是：</p>
+<table>
+<thead>
+<tr>
+<th>product_id</th>
+<th>SUM(sales_amount)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>250</td>
+</tr>
+<tr>
+<td>2</td>
+<td>500</td>
+</tr>
+<tr>
+<td>3</td>
+<td>400</td>
+</tr>
+</tbody></table>
+<h6 id="HAVING的作用-可以让我们筛选分组后的各组数据。"><a href="#HAVING的作用-可以让我们筛选分组后的各组数据。" class="headerlink" title="HAVING的作用  可以让我们筛选分组后的各组数据。"></a>HAVING的作用  可以让我们筛选分组后的各组数据。</h6><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">column_name</span>, aggregate_function(<span class="hljs-built_in">column_name</span>)<br><span class="hljs-keyword">FROM</span> <span class="hljs-built_in">table_name</span><br><span class="hljs-keyword">WHERE</span> <span class="hljs-built_in">column_name</span> <span class="hljs-keyword">operator</span> <span class="hljs-keyword">value</span><br><span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> <span class="hljs-built_in">column_name</span><br><span class="hljs-keyword">HAVING</span> aggregate_function(<span class="hljs-built_in">column_name</span>) <span class="hljs-keyword">operator</span> <span class="hljs-keyword">value</span>;<br><span class="hljs-keyword">HAVING</span> 子句用于对聚合后的结果进行过滤。只有满足该条件的分组才会出现在最终结果中。<br>这里的 aggregate_function(<span class="hljs-built_in">column_name</span>) 是你在 <span class="hljs-keyword">SELECT</span> 中使用的聚合函数，<span class="hljs-keyword">operator</span> 是同样的比较运算符，<span class="hljs-keyword">value</span> 是比较的值。<br></code></pre></td></tr></table></figure>
+
+<p>假设有一个名为 <code>Sales</code> 的表，结构如下：</p>
+<table>
+<thead>
+<tr>
+<th>product_id</th>
+<th>sales_amount</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>100</td>
+</tr>
+<tr>
+<td>2</td>
+<td>200</td>
+</tr>
+<tr>
+<td>1</td>
+<td>150</td>
+</tr>
+<tr>
+<td>2</td>
+<td>300</td>
+</tr>
+<tr>
+<td>3</td>
+<td>400</td>
+</tr>
+</tbody></table>
+<p>如果你想计算每个产品的总销售额，并仅返回总销售额大于 300 的产品，可以使用以下 SQL 语句：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> product_id, <span class="hljs-built_in">SUM</span>(sales_amount) <span class="hljs-keyword">AS</span> total_sales  <br><span class="hljs-built_in">SUM</span>(sales_amount) 计算每个产品的销售总额。<span class="hljs-keyword">AS</span> total_sales 将这个计算结果的列命名为 total_sales<br><span class="hljs-keyword">FROM</span> Sales<br><span class="hljs-keyword">WHERE</span> sales_amount <span class="hljs-operator">&gt;</span> <span class="hljs-number">100</span><br><span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> product_id<br><span class="hljs-keyword">HAVING</span> <span class="hljs-built_in">SUM</span>(sales_amount) <span class="hljs-operator">&gt;</span> <span class="hljs-number">300</span>;<br></code></pre></td></tr></table></figure>
+
+<ol>
+<li><strong>WHERE sales_amount &gt; 100</strong>:<ul>
+<li>过滤掉销售额不大于 100 的记录。</li>
+</ul>
+</li>
+<li><strong>GROUP BY product_id</strong>:<ul>
+<li>按 <code>product_id</code> 进行分组。</li>
+</ul>
+</li>
+<li><strong>SELECT product_id, SUM(sales_amount)</strong>:<ul>
+<li>计算每个产品组的总销售额。</li>
+</ul>
+</li>
+<li><strong>HAVING SUM(sales_amount) &gt; 300</strong>:<ul>
+<li>在聚合结果中，只返回总销售额大于 300 的产品。</li>
+</ul>
+</li>
+</ol>
+<p>对于上述示例，结果可能如下：</p>
+<table>
+<thead>
+<tr>
+<th>product_id</th>
+<th>total_sales</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2</td>
+<td>500</td>
+</tr>
+<tr>
+<td>3</td>
+<td>400</td>
+</tr>
+</tbody></table>
+<p><img src="/2024/11/01/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/1732013665224.jpg" srcset="/img/loading.gif" lazyload alt="1732013665224"></p>
+<p>这个语句首先筛选出所有成绩大于等于80分的学生，并把他们的学号、姓名和性别插入到 STU 表中。<br>GROUP BY 和 HAVING 用来确保每个学生的每门课程成绩都大于等于80。</p>
+<h5 id="（13）统计3门以上课程不及格的学生，把相应的学生姓名、系别追加到另外一个表中"><a href="#（13）统计3门以上课程不及格的学生，把相应的学生姓名、系别追加到另外一个表中" class="headerlink" title="（13）统计3门以上课程不及格的学生，把相应的学生姓名、系别追加到另外一个表中"></a>（13）统计3门以上课程不及格的学生，把相应的学生姓名、系别追加到另外一个表中</h5><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> failed_students (SNAME, DEPARTMENT)<br><span class="hljs-keyword">SELECT</span> s.SNAME, s.DEPARTMENT<br><span class="hljs-keyword">FROM</span> student s<br><span class="hljs-keyword">JOIN</span> SC sc <span class="hljs-keyword">ON</span> s.SNO = sc.SNO<br><span class="hljs-keyword">WHERE</span> sc.grade &lt; <span class="hljs-number">60</span><br><span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> s.SNO, s.SNAME, s.DEPARTMENT<br><span class="hljs-keyword">HAVING</span> <span class="hljs-built_in">COUNT</span>(<span class="hljs-keyword">DISTINCT</span> sc.CNO) &gt; <span class="hljs-number">3</span>;<br></code></pre></td></tr></table></figure>
+
+
+<p>这个查询通过连接 student 表和 SC 表，筛选出不及格（成绩小于60）超过3门课程的学生，并将他们的姓名和系别插入到 failed_students 表中。</p>
 
                 
               </div>
